@@ -6,7 +6,7 @@ import Hero3 from '../../public/hero_3.jpeg';
 
 export default function Hero() {
   return (
-    <section className='w-full'>
+    <section className='w-full py-48'>
       <div className='container mx-auto flex text-zinc-100 flex-col gap-8'>
         <h1 className='text-2xl lg:text-5xl font-bold text-emerald-400'>
           A Gallery of Experiences:<br />Travel, Food & Collections That Tell a Story
