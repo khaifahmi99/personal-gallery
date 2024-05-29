@@ -1,8 +1,8 @@
 import Image from "next/image";
 
-import Hero1 from '../../public/hero_1.jpeg';
-import Hero2 from '../../public/hero_2.jpeg';
-import Hero3 from '../../public/hero_3.jpeg';
+import Travel1 from '../../public/travel1.jpeg';
+import Travel2 from '../../public/travel2.jpeg';
+import Food1 from '../../public/food1.jpeg';
 
 export default function Hero() {
   return (
@@ -26,19 +26,19 @@ export default function Hero() {
           </div>
           <div className="hidden xl:block xl:col-span-5 justify-self-center relative">
             <Image
-              src={Hero1}
+              src={Food1}
               alt="Image 1"
               width={192}
               className="hover:scale-110 translate-x-32 translate-y-8 rounded-lg shadow-md z-10 border-2 border-emerald-400 rotate-12 transition"
             />
             <Image
-              src={Hero2}
+              src={Travel1}
               alt="Image 2"
               width={192}
               className="hover:scale-110 -translate-x-32 translate-y-16 absolute top-0 rounded-lg shadow-md z-0 border-2 border-emerald-400 -rotate-6 transition"
             />
             <Image
-              src={Hero3}
+              src={Travel2}
               alt="Image 3"
               width={192}
               className="hover:scale-110 absolute top-0 rounded-lg shadow-md z-20 border-2 border-emerald-400 transition"

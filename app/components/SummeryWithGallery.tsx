@@ -25,7 +25,7 @@ export default function SummaryWithGallery({ images, theme, ...rest }: Props) {
                 key={index}
                 className={`relative m-2.5 transition-transform duration-1000 ease-linear transform translate-x-0`}
               >
-                <img src={image.src} alt={`Image ${index + 1}`} className="max-w-[200px] rounded shadow" />
+                <img src={image.src} alt={`Image ${index + 1}`} className="max-w-[200px] rounded shadow border-2 border-rose-200" />
               </div>
             ))}
           </div>
@@ -38,7 +38,7 @@ export default function SummaryWithGallery({ images, theme, ...rest }: Props) {
                 key={index}
                 className={`relative m-2.5 transition-transform duration-1000 ease-linear transform translate-x-0`}
               >
-                <img src={image.src} alt={`Image ${index + 1}`} className="max-w-[200px] rounded shadow" />
+                <img src={image.src} alt={`Image ${index + 1}`} className="max-w-[200px] rounded shadow border-2 border-rose-200" />
               </div>
             ))}
           </div>
