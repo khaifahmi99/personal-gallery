@@ -1,93 +1,70 @@
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 
-import assert from "assert";
 import SummaryHeader, { SummaryHeaderProps } from "./SummaryHeader";
+import { Content, getThemedTextColor } from "./SummaryWithTwoExamples";
+import { getThemedBackgroundPalette } from "./SummeryWithGallery";
 
-interface Content {
-  src: StaticImageData;
-  title: string;
-  subtitle: string;
+interface ContentWithLink extends Content {
+  link: string;
 }
 
-export type ThemeColor = 'emerald' | 'indigo' | 'rose' | 'amber';
-
 interface Props extends SummaryHeaderProps {
-  /**
-   * Must be exactly 2
-   */
-  contents: Content[];
+  contents: ContentWithLink[];
 }
 
 export default function SummaryWithExamples({ contents, theme, ...rest }: Props) {
-  assert(contents.length === 2);
-
+  const textColor = getThemedTextColor(theme);
   const bgClasses = getThemedBackgroundPalette(theme);
   const bgClass1 = bgClasses[0];
-  const bgClass2 = bgClasses[1];
-  const bgClass3 = bgClasses[2];
+  
+  const bgClassSections = bgClasses.slice(1);
+
+  const imagesAndTexts = contents.flatMap((content) => {
+    return [
+      { type: 'text', title: content.title, subtitle: content.subtitle },
+      { type: 'image', image: content.src },
+    ]
+  })
 
   return (
     <div className={`w-full text-zinc-900 pt-16 md:pt-32 ${bgClass1}`}>
       <SummaryHeader {...rest} theme={theme} />
-      <div className="grid grid-cols-2 gap-0">
-        <div className={`col-span-2 md:col-span-1 py-16 md:py-32 px-4 md:px-12 ${bgClass2}`}>
-          <div className="flex flex-col xl:flex-row gap-4">
-            <Image
-              src={contents[0].src}
-              alt="Image Pane 1"
-              height={256}
-              className="hover:scale-105 hover:-rotate-6 rounded-lg shadow-md z-10 border-2"
-            />
-            <div className='flex flex-col gap-4 text-zinc-900 py-4'>
-              <div className="font-bold text-xl">{contents[0].title}</div>
-              <div>{contents[0].subtitle}</div>
-            </div>
-          </div>
-        </div>
-        <div className={`col-span-2 md:col-span-1 py-16 md:py-32 px-4 md:px-12 ${bgClass3}`}>
-          <div className="flex flex-col xl:flex-row gap-4">
-            <Image
-              src={contents[1].src}
-              alt="Image Pane 2"
-              height={256}
-              className="hover:scale-105 hover:-rotate-6 rounded-lg shadow-md z-10 border-2"
-            />
-            <div className='flex flex-col gap-4 text-zinc-900 py-4'>
-              <div className="font-bold text-xl">{contents[1].title}</div>
-              <div>{contents[1].subtitle}</div>
-            </div>
-          </div>
-        </div>
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-0 w-full justify-items-stretch place-items-center">
+        {imagesAndTexts.map((imageOrText, i) => {
+          if (imageOrText.type === 'image') {
+            return (
+              <div
+                key={i}
+                className={`${bgClassSections[i + 1]} h-full place-items-center min-h-0 lg:min-h-96 p-16 align-center`}
+              >
+                <div className="flex justify-center">
+                  <Image
+                    key={i}
+                    src={imageOrText.image!}
+                    alt="Image Pane 1"
+                    height={256}
+                    className="hover:scale-105 hover:-rotate-6 rounded-lg shadow-md z-10"
+                  />
+                </div>
+              </div>
+            )
+          } else if (imageOrText.type === 'text') {
+            return (
+              <div
+                key={i}
+                className={`col-span-1 lg:col-span-2 ${bgClassSections[Math.round(i / 2)]} h-full place-items-center min-h-0 lg:min-h-96 p-8 lg:p-16`}
+              >                
+                <div className='flex flex-col gap-8 text-zinc-900 py-4'>
+                  <div className={`flex flex-row gap-4 text-xl cursor-pointer ${textColor}`}>{imageOrText.title}<div>{'-->'}</div></div>
+                  <div>{imageOrText.subtitle}</div>
+                </div>
+              </div>
+            )
+          }
+
+          return <></>
+        })}
       </div>
     </div>
   )
-}
-
-export function getThemedTextColor(theme: ThemeColor) {
-  switch (theme) {
-    case 'emerald':
-      return ['text-emerald-500 hover:text-emerald-700'];
-    case 'indigo':
-      return ['text-indigo-500 hover:text-indigo-700'];
-    case 'rose':
-      return ['text-rose-500 hover:text-rose-700'];
-    case 'amber':
-      return ['text-amber-500 hover:text-amber-700'];
-  }
-}
-
-/**
- * Return three shades of the bg-class (100, 300, 400)
- */
-export function getThemedBackgroundPalette(theme: ThemeColor) {
-  switch(theme) {
-    case 'emerald':
-      return ['bg-emerald-100', 'bg-emerald-300', 'bg-emerald-400'];
-    case 'indigo':
-      return ['bg-indigo-100', 'bg-indigo-300', 'bg-indigo-400'];
-    case 'rose':
-      return ['bg-rose-100', 'bg-rose-300', 'bg-rose-400'];
-    case 'amber':
-      return ['bg-amber-100', 'bg-amber-300', 'bg-amber-400'];
-  }
 }

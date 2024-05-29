@@ -1,6 +1,6 @@
 import { StaticImageData } from "next/image";
 import SummaryHeader, { SummaryHeaderProps } from "./SummaryHeader";
-import { ThemeColor } from "./SummaryWithExamples";
+import { ThemeColor } from "./SummaryWithTwoExamples";
 
 interface Props extends SummaryHeaderProps {
   images: StaticImageData[]

@@ -1,4 +1,4 @@
-import { ThemeColor, getThemedBackgroundPalette, getThemedTextColor } from "./SummaryWithExamples";
+import { ThemeColor, getThemedBackgroundPalette, getThemedTextColor } from "./SummaryWithTwoExamples";
 
 export interface SummaryHeaderProps {
   title: string;
