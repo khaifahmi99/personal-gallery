@@ -35,7 +35,7 @@ export default function Home() {
         title='FOODS' 
         subtitle='Where the dreams meet reality' 
         description='Grow your audience, build long-lasting customer relationships, and make more sales with powerful, easy-to-use marketing tools. Whether you need to offer discount codes or you want to build your email list, you can do it all with Lemon Squeezy.' 
-        link='/'
+        link='/eats'
         theme='rose'
         images={[
           Food1, Food2, Food3, Food4, Food5, Food6, Food7, Food8,
