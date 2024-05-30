@@ -35,7 +35,7 @@ export default function SummaryWithExamples({ contents, theme, ...rest }: Props)
             return (
               <div
                 key={i}
-                className={`${bgClassSections[i + 1]} h-full place-items-center min-h-0 lg:min-h-96 p-16 align-center`}
+                className={`${bgClassSections[i + 1]} h-full place-items-center min-h-0 lg:min-h-96 p-16 align-center hidden lg:grid`}
               >
                 <div className="flex justify-center">
                   <Image
@@ -52,9 +52,9 @@ export default function SummaryWithExamples({ contents, theme, ...rest }: Props)
             return (
               <div
                 key={i}
-                className={`col-span-1 lg:col-span-2 ${bgClassSections[Math.round(i / 2)]} h-full place-items-center min-h-0 lg:min-h-96 p-8 lg:p-16`}
+                className={`col-span-1 lg:col-span-2 ${bgClassSections[Math.round(i / 2)]} h-full place-items-center min-h-96 p-8 lg:p-16`}
               >                
-                <div className='flex flex-col gap-8 text-zinc-900 py-4'>
+                <div className='flex flex-col gap-8 text-zinc-900 py-4 justify-center h-full lg:h-fit'>
                   <div className={`flex flex-row gap-4 text-xl cursor-pointer ${textColor}`}>{imageOrText.title}<div>{'-->'}</div></div>
                   <div>{imageOrText.subtitle}</div>
                 </div>
