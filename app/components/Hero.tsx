@@ -3,6 +3,7 @@ import Image from "next/image";
 import Travel1 from '../../public/travel1.jpeg';
 import Travel2 from '../../public/travel2.jpeg';
 import Food1 from '../../public/food1.jpeg';
+import { FaArrowRight } from "react-icons/fa6";
 
 export default function Hero() {
   return (
@@ -21,7 +22,7 @@ export default function Hero() {
               <div className='text-lg'>
                 Explore More
               </div>
-              <div className="">{'-->'}</div>
+              <div className="w-4 h-4"><FaArrowRight /></div>
             </div>
           </div>
           <div className="hidden xl:block xl:col-span-5 justify-self-center relative">

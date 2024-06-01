@@ -3,6 +3,7 @@ import Image from "next/image";
 import SummaryHeader, { SummaryHeaderProps } from "./SummaryHeader";
 import { Content, getThemedTextColor } from "./SummaryWithTwoExamples";
 import { getThemedBackgroundPalette } from "./SummeryWithGallery";
+import { FaArrowRight } from "react-icons/fa6";
 
 interface ContentWithLink extends Content {
   link: string;
@@ -55,7 +56,7 @@ export default function SummaryWithExamples({ contents, theme, ...rest }: Props)
                 className={`col-span-1 lg:col-span-2 ${bgClassSections[Math.round(i / 2)]} h-full place-items-center min-h-96 p-8 lg:p-16`}
               >                
                 <div className='flex flex-col gap-8 text-zinc-900 py-4 justify-center h-full lg:h-fit'>
-                  <div className={`flex flex-row gap-4 text-xl cursor-pointer ${textColor}`}>{imageOrText.title}<div>{'-->'}</div></div>
+                  <div className={`flex flex-row gap-4 text-xl cursor-pointer items-center ${textColor}`}>{imageOrText.title}<div><FaArrowRight /></div></div>
                   <div>{imageOrText.subtitle}</div>
                 </div>
               </div>

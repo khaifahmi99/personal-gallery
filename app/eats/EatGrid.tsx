@@ -1,6 +1,5 @@
-'use client'
 import Image from "next/image";
-import { usePathname, useRouter } from "next/navigation";
+import PaginationControl from "../components/PaginationControl";
 
 const PAGE_SIZE = 9;
 
@@ -39,22 +38,9 @@ interface Props {
 }
 
 export default async function PhotoGrid({ currentPage }: Props) {
-  const pathname = usePathname();
-  const { replace } = useRouter();
-
   const data = await getData({ pageNumber: currentPage });
   const records = data[0];
   const totalPages = data[1];
-
-  const onNextPage = (currentPage: number) => {
-    const nextPage = currentPage + 1;
-    replace(`${pathname}?page=${nextPage}`);
-  }
-
-  const onPreviousPage = (currentPage: number) => {
-    const previousPage = currentPage - 1;
-    replace(`${pathname}?page=${previousPage}`);
-  }
 
   return (
     <div className="flex flex-col gap-8 py-16">
@@ -68,7 +54,7 @@ export default async function PhotoGrid({ currentPage }: Props) {
               alt={`Image ${i + 1}`}
               className="hover:brightness-50"
             />
-            <div className='absolute top-2 right-2 bg-opacity-50 bg-indigo-700 rounded-lg px-2 text-white cursor-default pointer-events-none'>
+            <div className='absolute top-2 left-2 bg-opacity-50 bg-indigo-700 rounded-lg px-2 text-white cursor-default pointer-events-none'>
               📸 {food.capturedOn}
             </div>
             <div className='main-section absolute bottom-0 inset-x-0 text-white pointer-events-none'>
@@ -89,26 +75,7 @@ export default async function PhotoGrid({ currentPage }: Props) {
           </div>
         ))}
       </div>
-      <div className="grid grid-cols-2 w-full text-emerald-400 text-5xl">
-        <div 
-          onClick={() => {
-            if (currentPage === 1) {
-              return;
-            }
-
-            onPreviousPage(currentPage);
-          }}
-          className={currentPage === 1 ? 'opacity-25' : 'opacity-75 hover:opacity-100 cursor-pointer'}>{'<--'}</div>
-        <div 
-          onClick={() => {
-            if (currentPage === totalPages) {
-              return;
-            }
-
-            onNextPage(currentPage);
-          }}
-          className={currentPage === totalPages ? 'opacity-25 justify-self-end' : 'opacity-75 hover:opacity-100 cursor-pointer justify-self-end'}>{'-->'}</div>
-      </div>
+      <PaginationControl currentPage={currentPage} totalPages={totalPages} />
     </div>
   )
 }

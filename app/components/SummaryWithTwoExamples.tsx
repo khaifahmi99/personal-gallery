@@ -40,7 +40,7 @@ export default function SummaryWithTwoExamples({ contents, theme, ...rest }: Pro
             />
             <div className='flex flex-col gap-4 text-zinc-900 py-4'>
               <div className="font-bold text-xl">{contents[0].title}</div>
-              <div>{contents[0].subtitle}</div>
+              <div className="text-justify">{contents[0].subtitle}</div>
             </div>
           </div>
         </div>
@@ -54,7 +54,7 @@ export default function SummaryWithTwoExamples({ contents, theme, ...rest }: Pro
             />
             <div className='flex flex-col gap-4 text-zinc-900 py-4'>
               <div className="font-bold text-xl">{contents[1].title}</div>
-              <div>{contents[1].subtitle}</div>
+              <div className="text-justify">{contents[1].subtitle}</div>
             </div>
           </div>
         </div>
