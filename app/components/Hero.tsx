@@ -15,7 +15,7 @@ export default function Hero() {
         <div className='grid grid-cols-12'>
           <div className='col-span-12 lg:col-span-7'>
             <div className="py-8 lg:py-12">
-              <h2>Welcome to a journey through my experiences!<br /><br />This gallery is a glimpse into my travels, the delicious food I've encountered, and the unique collections I've built along the way. Each image, story, and treasure tells a tale of exploration, discovery, and the joy of finding beauty in the unexpected. Dive in and explore the world through my lens, where every bite, sight, and find becomes a cherished memory.</h2>
+              <h2>Welcome to a journey through my experiences!<br /><br />This gallery is a glimpse into my travels, the delicious food I&lsquo;ve encountered, and the unique collections I&lsquo;ve built along the way. Each image, story, and treasure tells a tale of exploration, discovery, and the joy of finding beauty in the unexpected. Dive in and explore the world through my lens, where every bite, sight, and find becomes a cherished memory.</h2>
             </div>
             {/* TODO: Handle onClick */}
             <div className="hover:bg-emerald-100 w-4/5 md:w-1/3 cursor-pointer flex flex-row justify-between text-zinc-900 px-4 py-2 bg-white rounded border-emerald-400 border-2 items-center">

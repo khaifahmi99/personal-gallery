@@ -10,7 +10,7 @@ export default function Navbar() {
       <div className="flex flex-row justify-between bg-white border-2 border-emerald-400 container mx-auto items-center rounded-2xl py-1">
         <Link href='/' className="flex flex-row gap-4 px-1 items-center">
           <Image src={Logo} width={50} height={50} alt="logo" />
-          <h1 className="text-2xl font-bold">Khai's Big World</h1>
+          <h1 className="text-2xl font-bold">Khai&lsquo;s Big World</h1>
         </Link>
         <ul className="hidden lg:flex flex-row gap-4 px-4">
           <li className="flex items-center group min-w-32 justify-center">
