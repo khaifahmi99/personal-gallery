@@ -7,6 +7,12 @@ const nextConfig = {
         hostname: 'd3ae3kedxtitrj.cloudfront.net',
         port: '',
         pathname: '/food/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'd3ae3kedxtitrj.cloudfront.net',
+        port: '',
+        pathname: '/travel/**',
       }
     ],
   },

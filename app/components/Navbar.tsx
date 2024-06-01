@@ -19,7 +19,7 @@ export default function Navbar() {
             </a>
           </li>
           <li className="flex items-center group min-w-32 justify-center">
-            <a href='/' className="flex flex-row items-center gap-2">
+            <a href='/travels' className="flex flex-row items-center gap-2">
               <div className="group-hover:bg-emerald-400 w-4 h-4 rounded-full"><FaRegCircle /></div>
               <div>TRAVELS</div>
             </a>
