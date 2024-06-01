@@ -55,11 +55,11 @@ export default async function PhotoGrid({ currentPage }: Props) {
               height={1024}
               alt={`Image ${i + 1}`}
             />
-            <div className='main-section absolute top-10 inset-x-0 text-white pointer-events-none'>
+            <div className='main-section absolute inset-2 text-white pointer-events-none'>
               <div className='p-2 truncate'>
                 <div className='main-header pb-4'>
-                  <div className='italic'>
-                   📍{image.title}
+                  <div>
+                   <span>📍</span><span className='italic'>{image.title}</span>
                   </div>
                 </div>
               </div>
