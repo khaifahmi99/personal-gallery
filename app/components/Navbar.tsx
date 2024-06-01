@@ -24,12 +24,13 @@ export default function Navbar() {
               <div>TRAVELS</div>
             </a>
           </li>
-          <li className="flex items-center group min-w-32 justify-center">
+          {/* TODO: Activate collections when section is visible */}
+          {/* <li className="flex items-center group min-w-32 justify-center">
             <a href='/' className="flex flex-row items-center gap-2">
               <div className="group-hover:bg-emerald-400 w-4 h-4 rounded-full"><FaRegCircle /></div>
               <div>COLLECTIONS</div>
             </a>
-          </li>
+          </li> */}
         </ul>
       </div>
     </div>
