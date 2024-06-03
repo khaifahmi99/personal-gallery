@@ -54,16 +54,18 @@ export default function Footer({ socialMedia }: Props) {
   )
 
   return (
-    <div className='bg-black text-emerald-400'>
-      <div className="flex flex-col md:flex-row md:justify-between items-center text-center space-y-8 md:space-y-0 py-8 container mx-auto">
-        {socials}
-        <div className="flex flex-col md:text-right">
-          <span>© 2024, Khai&lsquo;s Big World</span>
-          <div>
-            {/* TODO: Add link to personal website/github */}
-            Designed by <span className="cursor-pointer italic">Khai Fahmi Zaki</span>
-            {/* TODO: Add link to agency */}
-            <span className="agency-link"></span>
+    <div className='bg-grid'>
+      <div className='bg-radial text-emerald-400'>
+        <div className="flex flex-col md:flex-row md:justify-between items-center text-center space-y-8 md:space-y-0 py-8 container mx-auto">
+          {socials}
+          <div className="flex flex-col md:text-right">
+            <span>© 2024, Khai&lsquo;s Big World</span>
+            <div>
+              {/* TODO: Add link to personal website/github */}
+              Designed by <span className="cursor-pointer italic">Khai Fahmi Zaki</span>
+              {/* TODO: Add link to agency */}
+              <span className="agency-link"></span>
+            </div>
           </div>
         </div>
       </div>
