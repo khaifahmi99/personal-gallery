@@ -26,8 +26,9 @@ export default function RootLayout({
         {children}
         <Footer
           socialMedia={{
-            linkedin: 'https://www.linkedin.com/in/khaifahmi/',
-            github: 'https://github.com/khaifahmi99/'
+            linkedin: 'https://linkedin.com/in/khaifahmi/',
+            github: 'https://github.com/khaifahmi99/',
+            website: 'https://kfzaki.com/',
           }}
         />
         <SpeedInsights />
