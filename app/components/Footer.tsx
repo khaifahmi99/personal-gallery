@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { IoIosLink, IoLogoFacebook, IoLogoGithub, IoLogoInstagram, IoLogoLinkedin, IoLogoTwitter, IoLogoYoutube } from "react-icons/io";
 import { IoLogoTiktok } from "react-icons/io5";
 
@@ -79,8 +80,7 @@ export default function Footer({ socialMedia }: Props) {
           <div className="flex flex-col md:text-right">
             <span>© 2024, Khai&lsquo;s Big World</span>
             <div>
-              {/* TODO: Add link to personal website/github */}
-              Designed by <span className="cursor-pointer italic">Khai Fahmi Zaki</span>
+              Designed by <Link target="_blank" href={socialMedia.website ?? '/'} className="italic">Khai Fahmi Zaki</Link>
               {/* TODO: Add link to agency */}
               <span className="agency-link"></span>
             </div>
