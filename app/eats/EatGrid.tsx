@@ -1,15 +1,11 @@
 import Image from "next/image";
 import PaginationControl from "../components/PaginationControl";
 
+import data from '../../public/assets/eats/eats.json';
+
 const PAGE_SIZE = 9;
 
 async function getData({ pageNumber }: { pageNumber: number }): Promise<[Food[], number]> {
-  const res = await fetch('https://raw.githubusercontent.com/khaifahmi99/art-canvas-blog/main/public/assets/food/main.json')
-  if (!res.ok) {
-    throw new Error('Failed to fetch data')
-  }
- 
-  const data = await res.json();
   const totalPage = Math.ceil(data.foods.length / PAGE_SIZE);
 
   const startIndex = (pageNumber - 1) * PAGE_SIZE;
