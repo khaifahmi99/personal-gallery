@@ -1,4 +1,4 @@
-import { IoLogoFacebook, IoLogoInstagram, IoLogoTwitter, IoLogoYoutube } from "react-icons/io";
+import { IoLogoFacebook, IoLogoGithub, IoLogoInstagram, IoLogoLinkedin, IoLogoTwitter, IoLogoYoutube } from "react-icons/io";
 import { IoLogoTiktok } from "react-icons/io5";
 
 interface Props {
@@ -11,6 +11,8 @@ interface Props {
     facebook?: string;
     youtube?: string;
     tiktok?: string;
+    linkedin?: string;
+    github?: string;
   }
 
   address?: {
@@ -48,6 +50,16 @@ export default function Footer({ socialMedia }: Props) {
       {socialMedia.tiktok && (
         <a target="_blank" href={socialMedia.tiktok} className="hover:cursor-pointer opacity-75 hover:opacity-100">
           <IoLogoTiktok size='2em' />
+        </a>
+      )}
+      {socialMedia.linkedin && (
+          <a target="_blank" href={socialMedia.linkedin} className="hover:cursor-pointer opacity-75 hover:opacity-100">
+            <IoLogoLinkedin size='2em' />
+          </a>
+        )}
+      {socialMedia.github && (
+        <a target="_blank" href={socialMedia.github} className="hover:cursor-pointer opacity-75 hover:opacity-100">
+          <IoLogoGithub size='1.75em' />
         </a>
       )}
     </div>

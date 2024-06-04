@@ -25,7 +25,10 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer
-          socialMedia={{}}
+          socialMedia={{
+            linkedin: 'https://www.linkedin.com/in/khaifahmi/',
+            github: 'https://github.com/khaifahmi99/'
+          }}
         />
         <SpeedInsights />
         <Analytics />
