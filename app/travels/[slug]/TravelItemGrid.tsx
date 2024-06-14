@@ -1,6 +1,6 @@
 import Image from "next/image";
 import PaginationControl from "../../components/PaginationControl";
-import { RawTravel } from "../TravelCollectionGrid";
+import { RawTravel } from "@/app/_types/travel";
 
 const PAGE_SIZE = 9;
 
