@@ -12,15 +12,10 @@ export interface Content {
 export type ThemeColor = 'emerald' | 'indigo' | 'rose' | 'amber';
 
 interface Props extends SummaryHeaderProps {
-  /**
-   * Must be exactly 2
-   */
-  contents: Content[];
+  contents: [Content, Content];
 }
 
 export default function SummaryWithTwoExamples({ contents, theme, ...rest }: Props) {
-  assert(contents.length === 2);
-
   const bgClasses = getThemedBackgroundPalette(theme);
   const bgClass1 = bgClasses[0];
   const bgClass2 = bgClasses[1];
@@ -30,8 +25,8 @@ export default function SummaryWithTwoExamples({ contents, theme, ...rest }: Pro
     <div className={`w-full text-zinc-900 pt-16 md:pt-32 ${bgClass1}`}>
       <SummaryHeader {...rest} theme={theme} />
       <div className="grid grid-cols-2 gap-0">
-        <div className={`col-span-2 md:col-span-1 py-16 md:py-32 px-4 md:px-12 ${bgClass2}`}>
-          <div className="flex flex-col xl:flex-row gap-4">
+        <div className={`flex justify-end col-span-2 md:col-span-1 py-16 md:py-32 px-4 md:px-12 ${bgClass2}`}>
+          <div className="flex flex-col xl:flex-row gap-4 max-w-3xl">
             <Image
               src={contents[0].src}
               alt="Image Pane 1"
@@ -45,7 +40,7 @@ export default function SummaryWithTwoExamples({ contents, theme, ...rest }: Pro
           </div>
         </div>
         <div className={`col-span-2 md:col-span-1 py-16 md:py-32 px-4 md:px-12 ${bgClass3}`}>
-          <div className="flex flex-col xl:flex-row gap-4">
+          <div className="flex flex-col xl:flex-row gap-4 max-w-3xl">
             <Image
               src={contents[1].src}
               alt="Image Pane 2"

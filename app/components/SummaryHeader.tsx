@@ -15,7 +15,7 @@ export default function SummaryHeader({ title, link, subtitle, description, them
   const textClass = getThemedTextColor(theme);
 
   return (
-    <div className="container mx-auto pb-16 md:pb-32">
+    <div className="container mx-auto px-4 md:px-0 pb-16 md:pb-32">
       <Link href={link} className={`flex flex-row items-center gap-4 mb-8 ${textClass} w-1/6`}>
         <div className="text-xl px-2 lg:px-0">{title}</div>
         <div className="text-xl pb-1"><FaArrowRight /></div>
