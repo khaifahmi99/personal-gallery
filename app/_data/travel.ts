@@ -14,8 +14,7 @@ export const getTravels = async (pageNumber = 1) => {
   const startIndex = (pageNumber - 1) * PAGE_SIZE;
   const endIndex = startIndex + PAGE_SIZE;
 
-  const travelRecords = travels
-    .sort((a, b) => {
+  const travelRecords = travels.sort((a, b) => {
       return (new Date(b.date)).getTime() - (new Date(a.date)).getTime()
     })
     .slice(startIndex, endIndex)
@@ -23,11 +22,15 @@ export const getTravels = async (pageNumber = 1) => {
       title: `${item.city}, ${item.country}`,
       cover: `https://d3ae3kedxtitrj.cloudfront.net/travel/${item.folder}/${item.cover}`,
       id: `${item.folder}`
-    }));
+    })
+  );
 
-    return {
-      totalRecords: travels.length,
-      totalPages,
-      travels: travelRecords,
-    }
+  const totalImages = travels.flatMap(travel => travel.photos).length;
+
+  return {
+    totalRecords: travels.length,
+    totalPages,
+    travels: travelRecords,
+    totalImages,
+  }
 }

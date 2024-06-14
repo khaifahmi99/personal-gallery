@@ -29,15 +29,16 @@ export const getFoods = async (pageNumber = 1) => {
 
       capturedOn: rawFood['Captured on'],
       createdAt: rawFood['Date'] ?? undefined,
-
     })
   );
 
+  const totalImages = foods.flatMap(food => food['Images']).length;
 
   return {
     totalRecords: foods.length,
     totalPages,
     foods: foodRecords,
+    totalImages,
   }
 }
 

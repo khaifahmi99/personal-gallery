@@ -15,11 +15,17 @@ import Travel2 from '../public/travel2.jpeg';
 import SummaryWithGallery from "./components/SummeryWithGallery";
 import SummaryWithExamples from "./components/SummaryWithExamples";
 
+import { Data } from "./_data";
 
-export default function Home() {
+export default async function Home() {
+  const { totalRecords: totalFoodRecords, totalImages: totalFoodImages } = await Data.query.getFoods();
+  const { totalRecords: totalTravelPlaces, totalImages: totalTravelImages } = await Data.query.getTravels();
+
+  const totalImages = totalFoodImages + totalTravelImages;
+
   return (
     <main className="flex flex-col min-h-screen">
-      <Hero />
+      <Hero items={[{ name: 'Total Images', count: totalImages }, { name: 'Restaurants', count: totalFoodRecords }, { name: 'Travel Places', count: totalTravelPlaces }]} />
       <div id='travels'>
         <SummaryWithTwoExamples 
           title='TRAVELS' 

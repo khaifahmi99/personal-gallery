@@ -5,11 +5,14 @@ import Travel2 from '../../public/travel2.jpeg';
 import Food1 from '../../public/food1.jpeg';
 import { FaArrowRight } from "react-icons/fa6";
 import Link from "next/link";
+import Counter, { CounterProps } from "./Counter";
 
-export default function Hero() {
+type Props = CounterProps;
+
+export default function Hero(props: Props) {
   return (
     <div className='bg-grid'>
-      <section className='w-full py-48 bg-gray-800 bg-radial'>
+      <section className='w-full pt-48 pb-20 bg-gray-800 bg-radial'>
         <div className='container mx-auto flex text-zinc-100 flex-col gap-8'>
           <h1 className='text-2xl lg:text-5xl font-bold text-emerald-400'>
             A Gallery of Experiences:<br />Travel, Food & Collections That Tell a Story
@@ -55,6 +58,7 @@ export default function Hero() {
               />
             </div>
           </div>
+          <Counter items={props.items} />
         </div>
       </section>
     </div>
