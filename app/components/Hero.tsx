@@ -13,7 +13,7 @@ export default function Hero(props: Props) {
   return (
     <div className='bg-grid'>
       <section className='w-full pt-48 pb-20 bg-gray-800 bg-radial'>
-        <div className='container mx-auto flex text-zinc-100 flex-col gap-8'>
+        <div className='container px-4 lg:px-0 mx-auto flex text-zinc-100 flex-col gap-8'>
           <h1 className='text-2xl lg:text-5xl font-bold text-emerald-400'>
             A Gallery of Experiences:<br />Travel, Food & Collections That Tell a Story
           </h1>
