@@ -1,9 +1,14 @@
 "server-only"
 
-import { RawFood } from "../_types/food";
+import { Food, RawFood } from "../_types/food";
 
 const PAGE_SIZE = 9;
-export const getFoods = async (pageNumber = 1) => {
+type Props = {
+  pageNumber?: number;
+  fetchAll?: boolean;
+};
+
+export const getFoods = async ({ pageNumber = 1, fetchAll = false }: Props) => {
   const res = await fetch('https://raw.githubusercontent.com/khaifahmi99/personal-gallery/main/public/assets/eats/eats.json', {
     next: { revalidate: 3600 }
   })
@@ -14,22 +19,38 @@ export const getFoods = async (pageNumber = 1) => {
   const startIndex = (pageNumber - 1) * PAGE_SIZE;
   const endIndex = startIndex + PAGE_SIZE;
 
-  const foodRecords = foods
+  const foodRecords: Food[] = foods
     .reverse()
-    .slice(startIndex, endIndex)
-    .map((rawFood, i) => ({
-      id: `${i}`,
-      images: [`https://d3ae3kedxtitrj.cloudfront.net/food/${rawFood['Images'][0]}`],
-      cuisine: rawFood['Cuisine'],
-      description: rawFood['Description'],
-      city: rawFood['Restaurant City'],
-      country: rawFood['Restaurant Country'],
+    .slice(startIndex, fetchAll ? foods.length - 1 : endIndex)
+    .map((rawFood, i) => {
 
-      restaurantName: rawFood['Restaurant Name'] ?? undefined,
+      let coordinates: [number, number] | undefined = undefined;
+      if (rawFood['Restaurant Coordinates'] && rawFood['Restaurant Coordinates'].includes(',')) {
+        const parts = rawFood['Restaurant Coordinates'].replaceAll(' ', '').split(',');
 
-      capturedOn: rawFood['Captured on'],
-      createdAt: rawFood['Date'] ?? undefined,
-    })
+        if (parts.length === 2 && isFinite(Number(parts[0])) && isFinite(Number(parts[1]))) {
+          coordinates = [
+            Number(parts[0]),
+            Number(parts[1]),
+          ]
+        }
+      }
+
+      return {
+        id: `${i}`,
+        images: [`https://d3ae3kedxtitrj.cloudfront.net/food/${rawFood['Images'][0]}`],
+        cuisine: rawFood['Cuisine'],
+        description: rawFood['Description'],
+        city: rawFood['Restaurant City'],
+        country: rawFood['Restaurant Country'],
+        coordinates,
+
+        restaurantName: rawFood['Restaurant Name'] ?? undefined,
+
+        capturedOn: rawFood['Captured on'],
+        createdAt: rawFood['Date'] ?? undefined,
+      }
+    }
   );
 
   const totalImages = foods.flatMap(food => food['Images']).length;

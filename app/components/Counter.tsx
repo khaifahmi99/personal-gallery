@@ -42,8 +42,6 @@ function AnimatedCounter({ to }: { to: number }) {
   useEffect(() => {
     if (inView) {
       animate(count, to, { duration: 2 });
-
-
     }
   }, [count, inView, to]);
 

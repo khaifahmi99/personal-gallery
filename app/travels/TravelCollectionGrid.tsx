@@ -9,7 +9,7 @@ interface Props {
 }
 
 export default async function TravelCollectionGrid({ currentPage }: Props) {
-  const { travels, totalPages } = await Data.query.getTravels(currentPage);
+  const { travels, totalPages } = await Data.query.getTravels({ pageNumber: currentPage });
 
   return (
     <div className="flex flex-col gap-8 py-16">

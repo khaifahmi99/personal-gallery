@@ -7,7 +7,7 @@ interface Props {
 }
 
 export default async function PhotoGrid({ currentPage }: Props) {
-  const { foods, totalPages } = await Data.query.getFoods(currentPage);
+  const { foods, totalPages } = await Data.query.getFoods({ pageNumber: currentPage });
 
   return (
     <div className="flex flex-col gap-8 py-16">

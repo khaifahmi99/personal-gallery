@@ -20,6 +20,7 @@ export interface Food {
   description: string;
   city: string;
   country: string;
+  coordinates?: [number, number];
   
   restaurantName?: string;
 

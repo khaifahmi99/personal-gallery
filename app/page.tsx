@@ -18,8 +18,8 @@ import SummaryWithExamples from "./components/SummaryWithExamples";
 import { Data } from "./_data";
 
 export default async function Home() {
-  const { totalRecords: totalFoodRecords, totalImages: totalFoodImages } = await Data.query.getFoods();
-  const { totalRecords: totalTravelPlaces, totalImages: totalTravelImages } = await Data.query.getTravels();
+  const { totalRecords: totalFoodRecords, totalImages: totalFoodImages } = await Data.query.getFoods({});
+  const { totalRecords: totalTravelPlaces, totalImages: totalTravelImages } = await Data.query.getTravels({});
 
   const totalImages = totalFoodImages + totalTravelImages;
 

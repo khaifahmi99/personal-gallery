@@ -1,9 +1,14 @@
 "server-only"
 
-import { RawTravel } from "../_types/travel";
+import { RawTravel, Travel } from "../_types/travel";
 
 const PAGE_SIZE = 9;
-export const getTravels = async (pageNumber = 1) => {
+type Props = {
+  pageNumber?: number;
+  fetchAll?: boolean;
+};
+
+export const getTravels = async ({ pageNumber = 1, fetchAll = false } : Props) => {
   const res = await fetch('https://raw.githubusercontent.com/khaifahmi99/personal-gallery/main/public/assets/travels/travels.json', {
     next: { revalidate: 3600 }
   })
@@ -14,14 +19,21 @@ export const getTravels = async (pageNumber = 1) => {
   const startIndex = (pageNumber - 1) * PAGE_SIZE;
   const endIndex = startIndex + PAGE_SIZE;
 
-  const travelRecords = travels.sort((a, b) => {
+  const travelRecords: Travel[] = travels.sort((a, b) => {
       return (new Date(b.date)).getTime() - (new Date(a.date)).getTime()
     })
-    .slice(startIndex, endIndex)
+    .slice(startIndex, fetchAll ? travels.length - 1 : endIndex)
     .map((item) => ({
-      title: `${item.city}, ${item.country}`,
+      id: `${item.folder}`,
+      title: item.title,
+      location: `${item.city}, ${item.country}`,
       cover: `https://d3ae3kedxtitrj.cloudfront.net/travel/${item.folder}/${item.cover}`,
-      id: `${item.folder}`
+      city: item.city,
+      country: item.country,
+      date: item.date,
+      collections: item.collections,
+      capturedOn: item.captured_on,
+      photos: item.photos,
     })
   );
 
