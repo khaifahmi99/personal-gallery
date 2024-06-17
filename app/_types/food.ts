@@ -6,7 +6,7 @@ export interface RawFood {
   "Description": string;
   "Restaurant City": string;
   "Restaurant Country": string;
-  "Restaurant Coordinates": string | null;
+  "Restaurant Coordinates": [number, number] | null;
   "Restaurant Link": string | null;
   "Captured on": string;
   "Date": string | null;

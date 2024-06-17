@@ -24,18 +24,6 @@ export const getFoods = async ({ pageNumber = 1, fetchAll = false }: Props) => {
     .slice(startIndex, fetchAll ? foods.length - 1 : endIndex)
     .map((rawFood, i) => {
 
-      let coordinates: [number, number] | undefined = undefined;
-      if (rawFood['Restaurant Coordinates'] && rawFood['Restaurant Coordinates'].includes(',')) {
-        const parts = rawFood['Restaurant Coordinates'].replaceAll(' ', '').split(',');
-
-        if (parts.length === 2 && isFinite(Number(parts[0])) && isFinite(Number(parts[1]))) {
-          coordinates = [
-            Number(parts[0]),
-            Number(parts[1]),
-          ]
-        }
-      }
-
       return {
         id: `${i}`,
         images: [`https://d3ae3kedxtitrj.cloudfront.net/food/${rawFood['Images'][0]}`],
@@ -43,7 +31,7 @@ export const getFoods = async ({ pageNumber = 1, fetchAll = false }: Props) => {
         description: rawFood['Description'],
         city: rawFood['Restaurant City'],
         country: rawFood['Restaurant Country'],
-        coordinates,
+        coordinates: rawFood['Restaurant Coordinates'] ?? undefined,
 
         restaurantName: rawFood['Restaurant Name'] ?? undefined,
 
