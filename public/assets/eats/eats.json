@@ -28,7 +28,10 @@
       "Description": "Fries",
       "Restaurant City": "Melbourne",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -37.817372,
+        144.9524792
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone SE",
       "Date": "2022-07-20 12:44:00+00:00",
@@ -45,7 +48,10 @@
       "Description": "Cheese Wheel Pasta",
       "Restaurant City": "Melbourne",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -37.68551,
+        145.0214758
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone SE",
       "Date": "2022-07-20 12:44:00+00:00",
@@ -63,7 +69,10 @@
       "Description": "Biryani",
       "Restaurant City": "Melbourne",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -37.797057,
+        144.968151
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone SE",
       "Date": "2022-07-20 12:44:00+00:00",
@@ -80,7 +89,10 @@
       "Description": "Nasi Lemak Chicken Rendang",
       "Restaurant City": "Melbourne",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -37.819341,
+        144.952417
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone SE",
       "Date": "2022-07-20 12:44:00+00:00",
@@ -99,7 +111,10 @@
       "Description": "Pizza, Pasta, Arrancini",
       "Restaurant City": "Melbourne",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -37.8142454,
+        144.9631732
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone SE",
       "Date": "2022-07-20 12:44:00+00:00",
@@ -119,7 +134,10 @@
       "Description": "Fried Chicken, Potato Heaven",
       "Restaurant City": "Melbourne",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -37.8196424,
+        144.9574355
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone SE",
       "Date": "2022-07-20 12:44:00+00:00",
@@ -190,7 +208,10 @@
       "Description": "Veal Schnitzel",
       "Restaurant City": "Melbourne",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -37.8142454,
+        144.9631732
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone SE",
       "Date": "2022-07-20 12:44:00+00:00",
@@ -210,7 +231,10 @@
       "Description": "Mala Tang Hot Pot Noodles",
       "Restaurant City": "Melbourne",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -37.8121849,
+        144.9647911
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone SE",
       "Date": "2022-07-20 12:44:00+00:00",
@@ -227,7 +251,10 @@
       "Description": "Nasi Lemak",
       "Restaurant City": "Melbourne",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -37.8007845,
+        144.9656918
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone SE",
       "Date": "2022-07-20 12:44:00+00:00",
@@ -245,7 +272,10 @@
       "Description": "Chocolate Kugelhopf",
       "Restaurant City": "Melbourne",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -37.8681561,
+        144.9792122
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone SE",
       "Date": "2022-07-20 12:44:00+00:00",
@@ -262,7 +292,10 @@
       "Description": "Unagi Don",
       "Restaurant City": "Melbourne",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -37.8122552,
+        144.9657912
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone SE",
       "Date": "2022-07-20 12:44:00+00:00",
@@ -297,7 +330,10 @@
       "Description": "Ramen",
       "Restaurant City": "Melbourne",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -37.8040945,
+        144.9665432
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone SE",
       "Date": "2022-07-20 12:44:00+00:00",
@@ -348,7 +384,10 @@
       "Description": "Cold Soba, Tempura Prawns",
       "Restaurant City": "Melbourne",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -37.7905932,
+        144.9718937
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone SE",
       "Date": "2022-07-20 12:44:00+00:00",
@@ -365,7 +404,10 @@
       "Description": "Chicken Schnitzel",
       "Restaurant City": "Bendigo",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -36.7590183,
+        144.2826718
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone SE",
       "Date": "2022-07-20 12:44:00+00:00",
@@ -382,7 +424,10 @@
       "Description": "Chocolate Pancake",
       "Restaurant City": "Melbourne",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -37.8100658,
+        144.9635187
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone SE",
       "Date": "2022-07-20 12:44:00+00:00",
@@ -399,7 +444,10 @@
       "Description": "Breakfast Burger",
       "Restaurant City": "Melbourne",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -37.8122345,
+        144.9604926
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone SE",
       "Date": "2022-07-20 12:44:00+00:00",
@@ -436,7 +484,10 @@
       "Description": "Pizza, Pasta, Chicken Schnitzel",
       "Restaurant City": "Melbourne",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -37.8170187,
+        144.9657481
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone SE",
       "Date": "2022-07-20 12:44:00+00:00",
@@ -454,7 +505,10 @@
       "Description": "Sushi, Yakitori",
       "Restaurant City": "Melbourne",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -38.1451633,
+        145.1394283
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone SE",
       "Date": "2022-07-20 12:44:00+00:00",
@@ -491,7 +545,10 @@
       "Description": "Pizza",
       "Restaurant City": "Melbourne",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -37.78872595,
+        145.2680707489128
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone SE",
       "Date": "2022-07-20 12:44:00+00:00",
@@ -526,7 +583,10 @@
       "Description": "Char Kuey Teow, Roti Canai",
       "Restaurant City": "Melbourne",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -37.8123114,
+        144.9615654
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone SE",
       "Date": "2022-07-20 12:44:00+00:00",
@@ -577,7 +637,10 @@
       "Description": "Tomyum, Steamed Fish",
       "Restaurant City": "Melbourne",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -37.804353,
+        144.966529
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone SE",
       "Date": "2022-07-20 12:44:00+00:00",
@@ -613,7 +676,10 @@
       "Description": "Seafood Platter",
       "Restaurant City": "Geelong",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -38.144651800000005,
+        144.36450794971066
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone SE",
       "Date": "2022-07-20 12:44:00+00:00",
@@ -630,7 +696,10 @@
       "Description": "Japanese BBQ",
       "Restaurant City": "Melbourne",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -37.811459,
+        144.97208
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone SE",
       "Date": "2022-07-20 12:44:00+00:00",
@@ -647,7 +716,10 @@
       "Description": "Pho",
       "Restaurant City": "Melbourne",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -37.799246749999995,
+        144.89993020748886
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone SE",
       "Date": "2022-07-20 12:44:00+00:00",
@@ -664,7 +736,10 @@
       "Description": "Bebek Penyet",
       "Restaurant City": "Melbourne",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -37.8070588,
+        144.9596308
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone SE",
       "Date": "2022-07-20 12:44:00+00:00",
@@ -681,7 +756,10 @@
       "Description": "Chicken Wings",
       "Restaurant City": "Melbourne",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -37.7148979,
+        145.0073159
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone SE",
       "Date": "2022-07-20 12:44:00+00:00",
@@ -716,7 +794,10 @@
       "Description": "Pretzel",
       "Restaurant City": "Melbourne",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -37.8222136,
+        145.03386957602564
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone SE",
       "Date": "2022-07-20 12:44:00+00:00",
@@ -784,7 +865,10 @@
       "Description": "Croque Monseur",
       "Restaurant City": "Melbourne",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -37.8168787,
+        144.9663397
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone SE",
       "Date": "2022-07-20 12:44:00+00:00",
@@ -804,7 +888,10 @@
       "Description": "Steak and Chips",
       "Restaurant City": "Melbourne",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -37.819162,
+        144.95733
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone SE",
       "Date": "2022-07-20 12:44:00+00:00",
@@ -821,7 +908,10 @@
       "Description": "Braised Brisket Burger",
       "Restaurant City": "Melbourne",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -37.824213150000006,
+        144.9518422050811
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone SE",
       "Date": "2022-07-20 12:44:00+00:00",
@@ -838,7 +928,10 @@
       "Description": "Ramen",
       "Restaurant City": "Melbourne",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -37.812303,
+        144.9672709
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone SE",
       "Date": "2022-07-20 12:44:00+00:00",
@@ -855,7 +948,10 @@
       "Description": "Pizza",
       "Restaurant City": "Melbourne",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -37.8142454,
+        144.9631732
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone SE",
       "Date": "2022-07-20 12:44:00+00:00",
@@ -872,7 +968,10 @@
       "Description": "Beef Ribs",
       "Restaurant City": "Melbourne",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -37.6726501,
+        145.1517387
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone SE",
       "Date": "2022-07-20 12:44:00+00:00",
@@ -889,7 +988,10 @@
       "Description": "Chicken Parma",
       "Restaurant City": "Melbourne",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -37.818575,
+        144.949135
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone SE",
       "Date": "2022-07-20 12:44:00+00:00",
@@ -906,7 +1008,10 @@
       "Description": "Souvlaki on a plate",
       "Restaurant City": "Melbourne",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -37.8142454,
+        144.9631732
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone SE",
       "Date": "2022-07-20 12:44:00+00:00",
@@ -923,7 +1028,10 @@
       "Description": "Cupcakes",
       "Restaurant City": "Melbourne",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -37.855704,
+        145.020359
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone SE",
       "Date": "2022-07-20 12:44:00+00:00",
@@ -957,7 +1065,10 @@
       "Description": "Tacos",
       "Restaurant City": "Melbourne",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -37.8009521,
+        144.9782174
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone SE",
       "Date": "2022-07-20 12:44:00+00:00",
@@ -1008,7 +1119,10 @@
       "Description": "Bagels",
       "Restaurant City": "Melbourne",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -37.810266,
+        144.963927
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone SE",
       "Date": "2022-07-20 12:44:00+00:00",
@@ -1080,7 +1194,10 @@
       "Description": "Pizza, Pasta",
       "Restaurant City": "Melbourne",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -37.7759696,
+        144.9708453
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone SE",
       "Date": "2022-07-20 12:44:00+00:00",
@@ -1097,7 +1214,10 @@
       "Description": "Big Breakfast",
       "Restaurant City": "Grampians",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -37.138352999999995,
+        142.51991427347014
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone SE",
       "Date": "2022-07-20 12:44:00+00:00",
@@ -1114,7 +1234,10 @@
       "Description": "Katsu Curry Rice",
       "Restaurant City": "Melbourne",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -37.834451,
+        144.963597
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone SE",
       "Date": "2022-07-20 12:44:00+00:00",
@@ -1148,7 +1271,10 @@
       "Description": "Burgers and Fries",
       "Restaurant City": "Sydney",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -33.8624256,
+        151.2082851
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone 13 Mini",
       "Date": "2024-05-06 12:39:00+00:00",
@@ -1201,7 +1327,10 @@
       "Description": "Nasi Kerabu",
       "Restaurant City": "Melbourne",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -37.7410745,
+        144.965189
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone 13 Mini",
       "Date": "2024-05-06 12:39:00+00:00",
@@ -1218,7 +1347,10 @@
       "Description": "Pizza and Pastries",
       "Restaurant City": "Melbourne",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -37.7981549,
+        144.9678859
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone 13 Mini",
       "Date": "2024-05-06 12:39:00+00:00",
@@ -1269,7 +1401,10 @@
       "Description": "Pizza, Pasta",
       "Restaurant City": "Melbourne",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -37.7797044,
+        144.9970856
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone 13 Mini",
       "Date": "2024-05-06 12:39:00+00:00",
@@ -1307,7 +1442,10 @@
       "Description": "Pastrami Sandwich",
       "Restaurant City": "Sydney",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -33.8635681,
+        151.2076768
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone 13 Mini",
       "Date": "2024-05-06 12:39:00+00:00",
@@ -1327,7 +1465,10 @@
       "Description": "Soup in a cup",
       "Restaurant City": "Bratislava",
       "Restaurant Country": "Slovakia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        48.15926025,
+        17.139658691421687
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone 13 Mini",
       "Date": "2024-05-06 12:39:00+00:00",
@@ -1345,7 +1486,10 @@
       "Description": "Trdelnik",
       "Restaurant City": "Bratislava",
       "Restaurant Country": "Slovakia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        48.15926025,
+        17.139658691421687
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone 13 Mini",
       "Date": "2024-05-06 12:39:00+00:00",
@@ -1363,7 +1507,10 @@
       "Description": "Ice Cream",
       "Restaurant City": "Vienna",
       "Restaurant Country": "Austria",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        48.2083537,
+        16.3725042
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone 13 Mini",
       "Date": "2024-05-06 12:39:00+00:00",
@@ -1400,7 +1547,10 @@
       "Description": "Pide",
       "Restaurant City": "Budapest",
       "Restaurant Country": "Hungary",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        47.48138955,
+        19.14609412691246
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone 13 Mini",
       "Date": "2024-05-06 12:39:00+00:00",
@@ -1417,7 +1567,10 @@
       "Description": "Goulash",
       "Restaurant City": "Budapest",
       "Restaurant Country": "Hungary",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        47.48138955,
+        19.14609412691246
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone 13 Mini",
       "Date": "2024-05-06 12:39:00+00:00",
@@ -1452,7 +1605,10 @@
       "Description": "Vienna Coffee",
       "Restaurant City": "Prague",
       "Restaurant Country": "Czech Republic",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        50.0596288,
+        14.446459273258009
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone 13 Mini",
       "Date": "2024-05-06 12:39:00+00:00",
@@ -1487,7 +1643,10 @@
       "Description": "Trdelnik",
       "Restaurant City": "Prague",
       "Restaurant Country": "Czech Republic",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        50.0596288,
+        14.446459273258009
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone 13 Mini",
       "Date": "2024-05-06 12:39:00+00:00",
@@ -1539,7 +1698,10 @@
       "Description": "Nasi Lemak",
       "Restaurant City": "Perth",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -31.9558933,
+        115.8605855
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone 13 Mini",
       "Date": "2024-05-06 12:39:00+00:00",
@@ -1556,7 +1718,10 @@
       "Description": "Chinese Meal with Rice",
       "Restaurant City": "Perth",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -31.9558933,
+        115.8605855
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone 13 Mini",
       "Date": "2024-05-06 12:39:00+00:00",
@@ -1573,7 +1738,10 @@
       "Description": "Thai Green Curry, Roast Chicken",
       "Restaurant City": "Perth",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -31.9558933,
+        115.8605855
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone 13 Mini",
       "Date": "2024-05-06 12:39:00+00:00",
@@ -1590,7 +1758,10 @@
       "Description": "Korean BBQ",
       "Restaurant City": "Perth",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -31.9558933,
+        115.8605855
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone 13 Mini",
       "Date": "2024-05-06 12:39:00+00:00",
@@ -1608,7 +1779,10 @@
       "Description": "American Double Cheese Burger",
       "Restaurant City": "Perth",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -31.9529815,
+        115.8555293
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone 13 Mini",
       "Date": "2024-05-06 12:39:00+00:00",
@@ -1644,7 +1818,10 @@
       "Description": "Oysters and Lobster",
       "Restaurant City": "Melbourne",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -37.83217305,
+        144.95648811159901
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone 13 Mini",
       "Date": "2024-05-06 12:39:00+00:00",
@@ -1683,7 +1860,10 @@
       "Description": "Lamb Ragu",
       "Restaurant City": "Mt Hotham",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -36.992130700000004,
+        147.1488196657662
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone 13 Mini",
       "Date": "2024-05-06 12:39:00+00:00",
@@ -1758,7 +1938,10 @@
       "Description": "Parisian Chocolate and Pastries",
       "Restaurant City": "Melbourne",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -37.7899563,
+        144.9715304506595
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone 13 Mini",
       "Date": "2024-05-06 12:39:00+00:00",
@@ -1775,7 +1958,10 @@
       "Description": "Nitro Fused Cold Brew Coffee",
       "Restaurant City": "Melbourne",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -37.8011084,
+        144.966676
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone 13 Mini",
       "Date": "2024-05-06 12:39:00+00:00",
@@ -1828,7 +2014,10 @@
       "Description": "Eggplant Entre and Steak",
       "Restaurant City": "Macedon",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -37.2712108,
+        144.7522824
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone 13 Mini",
       "Date": "2024-05-06 12:39:00+00:00",
@@ -1847,7 +2036,10 @@
       "Description": "Clear Broth Ramen",
       "Restaurant City": "Melbourne",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -37.8132413,
+        144.9622894
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone 13 Mini",
       "Date": "2024-05-06 12:39:00+00:00",
@@ -1864,7 +2056,10 @@
       "Description": "Tikka Masala with Rice",
       "Restaurant City": "Melbourne",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -37.8013383,
+        144.9671041
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone 13 Mini",
       "Date": "2024-05-06 12:39:00+00:00",
@@ -1936,7 +2131,10 @@
       "Description": "Ice Cream",
       "Restaurant City": "Melbourne",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -37.800422,
+        144.98417
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone 13 Mini",
       "Date": "2024-05-06 12:39:00+00:00",
@@ -1972,7 +2170,10 @@
       "Description": "Barramundi, Eggs Benedict",
       "Restaurant City": "Melbourne",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -37.8159784,
+        144.9530202
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone 13 Mini",
       "Date": "2024-05-06 12:39:00+00:00",
@@ -1994,7 +2195,10 @@
       "Description": "New York Wagyu Steak",
       "Restaurant City": "Melbourne",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -37.8141094,
+        144.9677371
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone 13 Mini",
       "Date": "2024-05-06 12:39:00+00:00",
@@ -2047,7 +2251,10 @@
       "Description": "Pizza, Fried Chicken",
       "Restaurant City": "Melbourne",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -37.8637513,
+        145.0813187
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone 13 Mini",
       "Date": "2024-05-06 12:39:00+00:00",
@@ -2082,7 +2289,10 @@
       "Description": "French Pastries",
       "Restaurant City": "Melbourne",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -37.8078057,
+        144.9591765
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone 13 Mini",
       "Date": "2024-05-06 12:39:00+00:00",
@@ -2120,7 +2330,10 @@
       "Description": "Italian Pizza",
       "Restaurant City": "Melbourne",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -37.8133941,
+        144.9618471
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone 13 Mini",
       "Date": "2024-05-06 12:39:00+00:00",
@@ -2138,7 +2351,10 @@
       "Description": "Fish and Chips, Oyster",
       "Restaurant City": "Sydney",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -33.87314725,
+        151.19255523256666
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone 13 Mini",
       "Date": "2024-05-06 12:39:00+00:00",
@@ -2155,7 +2371,10 @@
       "Description": "Egg Omelette",
       "Restaurant City": "Sydney",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -33.8724875,
+        151.2243685
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone 13 Mini",
       "Date": "2024-05-06 12:39:00+00:00",
@@ -2281,7 +2500,10 @@
       "Description": "Korean Fried Chicken",
       "Restaurant City": "Sydney",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -33.8174346,
+        151.0033468
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone 13 Mini",
       "Date": "2024-05-06 12:39:00+00:00",
@@ -2299,7 +2521,10 @@
       "Description": "Ice Cream",
       "Restaurant City": "Sydney",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -33.8617581,
+        151.2099103
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone 13 Mini",
       "Date": "2024-05-06 12:39:00+00:00",
@@ -2317,7 +2542,10 @@
       "Description": "Steak, Ribs, Chips",
       "Restaurant City": "Sydney",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -33.8665534,
+        151.2014999
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone 13 Mini",
       "Date": "2024-05-06 12:39:00+00:00",
@@ -2334,7 +2562,10 @@
       "Description": "Pancakes",
       "Restaurant City": "Sydney",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -33.8588733,
+        151.2083482
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone 13 Mini",
       "Date": "2024-05-06 12:39:00+00:00",
@@ -2352,7 +2583,10 @@
       "Description": "Ramen",
       "Restaurant City": "Sydney",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -33.8852705,
+        151.2004432
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone 13 Mini",
       "Date": "2024-05-06 12:39:00+00:00",
@@ -2404,7 +2638,10 @@
       "Description": "Fried Chicken Burger",
       "Restaurant City": "Melbourne",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -37.8151993,
+        144.9716261
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone 13 Mini",
       "Date": "2024-05-06 12:39:00+00:00",
@@ -2422,7 +2659,10 @@
       "Description": "Ramen",
       "Restaurant City": "Melbourne",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -37.8104586,
+        144.9663415
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone 13 Mini",
       "Date": "2024-05-06 12:39:00+00:00",
@@ -2439,7 +2679,10 @@
       "Description": "Eel Don",
       "Restaurant City": "Melbourne",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -37.8108849,
+        144.9681913
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone 13 Mini",
       "Date": "2024-05-06 12:39:00+00:00",
@@ -2457,7 +2700,10 @@
       "Description": "American Double Cheese Burger",
       "Restaurant City": "Melbourne",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -37.8157833,
+        144.9552277
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone 13 Mini",
       "Date": "2024-05-06 12:39:00+00:00",
@@ -2492,7 +2738,10 @@
       "Description": "Mac N Cheese, Oklahama Burger",
       "Restaurant City": "Melbourne",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -37.7975407,
+        144.9863556
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone 13 Mini",
       "Date": "2024-05-06 12:39:00+00:00",
@@ -2509,7 +2758,10 @@
       "Description": "Pepperoni Pizza",
       "Restaurant City": "Melbourne",
       "Restaurant Country": "Australia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        -37.84318515,
+        144.84560665284891
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone 13 Mini",
       "Date": "2024-05-06 12:39:00+00:00",
@@ -2544,7 +2796,10 @@
       "Description": "Sushi",
       "Restaurant City": "Kuala Lumpur",
       "Restaurant Country": "Malaysia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        3.1473219,
+        101.7132001
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone 13 Mini",
       "Date": "2024-05-06 12:39:00+00:00",
@@ -2579,7 +2834,10 @@
       "Description": "Chicken Rice, Mantou",
       "Restaurant City": "Kuala Lumpur",
       "Restaurant Country": "Malaysia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        3.0494853,
+        101.6715938
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone 13 Mini",
       "Date": "2024-05-06 12:39:00+00:00",
@@ -2598,7 +2856,10 @@
       "Description": "Nasi Lemak Panggong, Salted Egg Chicken Rice",
       "Restaurant City": "Kuala Lumpur",
       "Restaurant Country": "Malaysia",
-      "Restaurant Coordinates": null,
+      "Restaurant Coordinates": [
+        3.1417583,
+        101.6971736
+      ],
       "Restaurant Link": null,
       "Captured on": "iPhone 13 Mini",
       "Date": "2024-05-06 12:39:00+00:00",
