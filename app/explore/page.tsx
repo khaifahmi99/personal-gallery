@@ -11,7 +11,7 @@ export default async function Explore() {
 
   const { travels } = await Data.query.getTravels({ fetchAll: true });
   const travelPlaces = travels
-    .map(({ title, coordinates }) => ({ name: title, coordinates, type: 'travel' as ('travel' | 'food') }));
+    .map(({ title, coordinates, id }) => ({ name: title, coordinates, type: 'travel' as ('travel' | 'food'), link: `/travels/${id}` }));
 
   const items = [...foodPlaces, ...travelPlaces];
 

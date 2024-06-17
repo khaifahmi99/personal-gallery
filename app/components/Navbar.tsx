@@ -10,6 +10,13 @@ export default function Navbar() {
         <NavbarLogo />
         <ul className="hidden lg:flex flex-row gap-4 px-4">
           <li className="flex items-center group min-w-32 justify-center">
+            <Link href='/explore' className="flex flex-row items-center gap-2">
+              <div className="group-hover:bg-emerald-400 w-4 h-4 rounded-full"><FaRegCircle /></div>
+              <div>EXPLORE</div>
+            </Link>
+          </li>
+
+          <li className="flex items-center group min-w-32 justify-center">
             <Link href='/eats' className="flex flex-row items-center gap-2">
               <div className="group-hover:bg-emerald-400 w-4 h-4 rounded-full"><FaRegCircle /></div>
               <div>EATS</div>
