@@ -5,7 +5,9 @@
       "city": "Munich",
       "country": "Germany",
       "date": "2023-05-25",
-      "collections": ["Europe 2023"],
+      "collections": [
+        "Europe 2023"
+      ],
       "captured_on": "iPhone 13 Mini",
       "folder": "2023-munich",
       "cover": "mun_136.jpeg",
@@ -220,14 +222,18 @@
         "mun_97.jpeg",
         "mun_98.jpeg",
         "mun_99.jpeg"
-      ]
+      ],
+      "latitude": 48.1371079,
+      "longitude": 11.5753822
     },
     {
       "title": "Neuschwanstein Day Trip - Europe 2023",
       "city": "Schwangau",
       "country": "Germany",
       "date": "2023-05-26",
-      "collections": ["Europe 2023"],
+      "collections": [
+        "Europe 2023"
+      ],
       "captured_on": "iPhone 13 Mini",
       "folder": "2023-neuschwanstein",
       "cover": "neu_108.jpeg",
@@ -381,14 +387,18 @@
         "neu_97.jpeg",
         "neu_98.jpeg",
         "neu_99.jpeg"
-      ]
+      ],
+      "latitude": 47.5768048,
+      "longitude": 10.7329558
     },
     {
       "title": "Vienna - Europe 2023",
       "city": "Vienna",
       "country": "Austria",
       "date": "2023-05-27",
-      "collections": ["Europe 2023"],
+      "collections": [
+        "Europe 2023"
+      ],
       "captured_on": "iPhone 13 Mini",
       "folder": "2023-vienna",
       "cover": "wie_269.jpeg",
@@ -889,14 +899,18 @@
         "wie_97.jpeg",
         "wie_98.jpeg",
         "wie_99.jpeg"
-      ]
+      ],
+      "latitude": 48.2083537,
+      "longitude": 16.3725042
     },
     {
       "title": "Bratislava Day Trip - Europe 2023",
       "city": "Bratislava",
       "country": "Slovakia",
       "date": "2023-05-29",
-      "collections": ["Europe 2023"],
+      "collections": [
+        "Europe 2023"
+      ],
       "captured_on": "iPhone 13 Mini",
       "folder": "2023-bratislava",
       "cover": "bra_150.jpeg",
@@ -1163,14 +1177,18 @@
         "bra_97.jpeg",
         "bra_98.jpeg",
         "bra_99.jpeg"
-      ]
+      ],
+      "latitude": 48.15926025,
+      "longitude": 17.139658691421687
     },
     {
       "title": "Budapest - Europe 2023",
       "city": "Budapest",
       "country": "Hungary",
       "date": "2023-06-01",
-      "collections": ["Europe 2023"],
+      "collections": [
+        "Europe 2023"
+      ],
       "captured_on": "iPhone 13 Mini",
       "folder": "2023-budapest",
       "cover": "bud_34.jpeg",
@@ -2067,14 +2085,18 @@
         "bud_97.jpeg",
         "bud_98.jpeg",
         "bud_99.jpeg"
-      ]
+      ],
+      "latitude": 47.48138955,
+      "longitude": 19.14609412691246
     },
     {
       "title": "Prague - Europe 2023",
       "city": "Prague",
       "country": "Czech Republic",
       "date": "2023-06-04",
-      "collections": ["Europe 2023"],
+      "collections": [
+        "Europe 2023"
+      ],
       "captured_on": "iPhone 13 Mini",
       "folder": "2023-prague",
       "cover": "pra_553.jpeg",
@@ -3116,14 +3138,18 @@
         "pra_997.jpeg",
         "pra_998.jpeg",
         "pra_999.jpeg"
-      ]
+      ],
+      "latitude": 50.0596288,
+      "longitude": 14.446459273258009
     },
     {
       "title": "Athens - Europe 2023",
       "city": "Athens",
       "country": "Greece",
       "date": "2023-06-08",
-      "collections": ["Europe 2023"],
+      "collections": [
+        "Europe 2023"
+      ],
       "captured_on": "iPhone 13 Mini",
       "folder": "2023-athens",
       "cover": "ath_172.jpeg",
@@ -3619,14 +3645,18 @@
         "ath_97.jpeg",
         "ath_98.jpeg",
         "ath_99.jpeg"
-      ]
+      ],
+      "latitude": 37.9755648,
+      "longitude": 23.7348324
     },
     {
       "title": "Sounion Day Trip - Europe 2023",
       "city": "Sounion",
       "country": "Greece",
       "date": "2023-06-09",
-      "collections": ["Europe 2023"],
+      "collections": [
+        "Europe 2023"
+      ],
       "captured_on": "iPhone 13 Mini",
       "folder": "2023-sounion",
       "cover": "sou_89.jpeg",
@@ -3787,14 +3817,18 @@
         "sou_97.jpeg",
         "sou_98.jpeg",
         "sou_99.jpeg"
-      ]
+      ],
+      "latitude": 37.6501072,
+      "longitude": 24.0262818
     },
     {
       "title": "Kalabaka Day Trip - Europe 2023",
       "city": "Kalabaka",
       "country": "Greece",
       "date": "2023-06-10",
-      "collections": ["Europe 2023"],
+      "collections": [
+        "Europe 2023"
+      ],
       "captured_on": "iPhone 13 Mini",
       "folder": "2023-kalabaka",
       "cover": "kal_108.jpeg",
@@ -4087,14 +4121,18 @@
         "kal_97.jpeg",
         "kal_98.jpeg",
         "kal_99.jpeg"
-      ]
+      ],
+      "latitude": 39.7070178,
+      "longitude": 21.6279431
     },
     {
       "title": "Delphi Day Trip - Europe 2023",
       "city": "Delphi",
       "country": "Greece",
       "date": "2023-06-11",
-      "collections": ["Europe 2023"],
+      "collections": [
+        "Europe 2023"
+      ],
       "captured_on": "iPhone 13 Mini",
       "folder": "2023-delphi",
       "cover": "del_131.jpeg",
@@ -4372,14 +4410,18 @@
         "del_97.jpeg",
         "del_98.jpeg",
         "del_99.jpeg"
-      ]
+      ],
+      "latitude": 38.4811538,
+      "longitude": 22.500548577222837
     },
     {
       "title": "Perth 2023",
       "city": "Perth",
       "country": "Australia",
       "date": "2023-07-20",
-      "collections": ["Perth 2023"],
+      "collections": [
+        "Perth 2023"
+      ],
       "captured_on": "iPhone 13 Mini",
       "folder": "2023-perth",
       "cover": "per_85.jpeg",
@@ -4528,14 +4570,18 @@
         "per_97.jpeg",
         "per_98.jpeg",
         "per_99.jpeg"
-      ]
+      ],
+      "latitude": -31.9558933,
+      "longitude": 115.8605855
     },
     {
       "title": "Rottnest Island Day Trip - Perth 2023",
       "city": "Rottnest Island",
       "country": "Australia",
       "date": "2023-07-21",
-      "collections": ["Perth 2023"],
+      "collections": [
+        "Perth 2023"
+      ],
       "captured_on": "iPhone 13 Mini",
       "folder": "2023-rottnest",
       "cover": "rot_56.jpeg",
@@ -4670,14 +4716,18 @@
         "rot_97.jpeg",
         "rot_98.jpeg",
         "rot_99.jpeg"
-      ]
+      ],
+      "latitude": -32.007009499999995,
+      "longitude": 115.52052709064799
     },
     {
       "title": "Lancelin Day Trip - Perth 2023",
       "city": "Lancelin",
       "country": "Australia",
       "date": "2023-07-22",
-      "collections": ["Perth 2023"],
+      "collections": [
+        "Perth 2023"
+      ],
       "captured_on": "iPhone 13 Mini",
       "folder": "2023-lancelin",
       "cover": "lan_18.jpeg",
@@ -4722,14 +4772,18 @@
         "lan_7.jpeg",
         "lan_8.jpeg",
         "lan_9.jpeg"
-      ]
+      ],
+      "latitude": -31.0225285,
+      "longitude": 115.3301909
     },
     {
       "title": "Hotham Heights - Ski Trip 2023",
       "city": "Hotham Heights",
       "country": "Australia",
       "date": "2023-08-01",
-      "collections": ["Ski Trip 2023"],
+      "collections": [
+        "Ski Trip 2023"
+      ],
       "captured_on": "iPhone 13 Mini",
       "folder": "2023-hotham",
       "cover": "hot_17.jpeg",
@@ -4800,14 +4854,18 @@
         "hot_7.jpeg",
         "hot_8.jpeg",
         "hot_9.jpeg"
-      ]
+      ],
+      "latitude": -37.0237881,
+      "longitude": 147.146226
     },
     {
       "title": "Sydney 2024",
       "city": "Sydney",
       "country": "Australia",
       "date": "2024-02-22",
-      "collections": ["Sydney 2024"],
+      "collections": [
+        "Sydney 2024"
+      ],
       "captured_on": "iPhone 13 Mini",
       "folder": "2024-sydney",
       "cover": "syd_133.jpeg",
@@ -5023,14 +5081,18 @@
         "syd_97.jpeg",
         "syd_98.jpeg",
         "syd_99.jpeg"
-      ]
+      ],
+      "latitude": -33.8698439,
+      "longitude": 151.2082848
     },
     {
       "title": "La Perouse Day Trip - Sydney 2024",
       "city": "La Perouse",
       "country": "Australia",
       "date": "2024-02-27",
-      "collections": ["Sydney 2024"],
+      "collections": [
+        "Sydney 2024"
+      ],
       "captured_on": "iPhone 13 Mini",
       "folder": "2024-la-perouse",
       "cover": "lap_86.jpeg",
@@ -5134,14 +5196,18 @@
         "lap_97.jpeg",
         "lap_98.jpeg",
         "lap_99.jpeg"
-      ]
+      ],
+      "latitude": -33.9886291,
+      "longitude": 151.2320796
     },
     {
       "title": "Blue Mountains Day Trip - Sydney 2024",
       "city": "Blue Mountains",
       "country": "Australia",
       "date": "2024-02-28",
-      "collections": ["Sydney 2024"],
+      "collections": [
+        "Sydney 2024"
+      ],
       "captured_on": "iPhone 13 Mini",
       "folder": "2024-blue-mountains",
       "cover": "bm_7.jpeg",
@@ -5236,7 +5302,9 @@
         "bm_89.jpeg",
         "bm_9.jpeg",
         "bm_90.jpeg"
-      ]
+      ],
+      "latitude": -33.60974105,
+      "longitude": 150.40522373235163
     }
   ]
 }
