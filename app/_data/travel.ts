@@ -24,16 +24,12 @@ export const getTravels = async ({ pageNumber = 1, fetchAll = false } : Props) =
     })
     .slice(startIndex, fetchAll ? travels.length - 1 : endIndex)
     .map((item) => ({
+      ...item,
       id: `${item.folder}`,
-      title: item.title,
       location: `${item.city}, ${item.country}`,
       cover: `https://d3ae3kedxtitrj.cloudfront.net/travel/${item.folder}/${item.cover}`,
-      city: item.city,
-      country: item.country,
-      date: item.date,
-      collections: item.collections,
       capturedOn: item.captured_on,
-      photos: item.photos,
+      coordinates: [item.latitude, item.longitude],
     })
   );
 

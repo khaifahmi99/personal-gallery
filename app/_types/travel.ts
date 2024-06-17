@@ -8,6 +8,8 @@ export interface RawTravel {
   "folder": string;
   "cover": string;
   "photos": string[];
+  latitude: number;
+  longitude: number;
 }
 
 export interface Travel {
@@ -21,4 +23,5 @@ export interface Travel {
   collections: string[];
   capturedOn: string;
   photos: string[];
+  coordinates: [number, number];
 }

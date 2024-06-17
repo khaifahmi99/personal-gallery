@@ -16,8 +16,9 @@ type Props = {
 };
 
 export const MapView = ({ items }: Props) => {
-  const markers = useMemo(() => items.map(item => 
+  const markers = useMemo(() => items.map((item, idx) => 
     <Marker 
+      key={idx}
       latitude={item.coordinates[0]} 
       longitude={item.coordinates[1]} 
       color={item.type === 'food' ? 'green' : 'blue'} 
@@ -25,8 +26,8 @@ export const MapView = ({ items }: Props) => {
   ), [items]);
 
   markers.push(...[
-    <Marker latitude={-37.81} longitude={144.96} color='blue' />,
-    <Marker latitude={-37.81} longitude={144.94} color='green' />,
+    <Marker key='example-1' latitude={-37.81} longitude={144.96} color='blue' />,
+    <Marker key='example-2' latitude={-37.81} longitude={144.94} color='green' />,
   ])
 
   return (
