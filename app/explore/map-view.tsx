@@ -34,8 +34,8 @@ export const MapView = ({ items }: Props) => {
         setPopupInfo(item);
       }}
     >
-      <div className={`w-4 h-4 rounded-full border-2 border-white ${item.type === 'food' ? 'bg-blue-600' : 'bg-green-600'}`}>
-        <span className='invisible'>content</span>
+      <div className={`w-6 h-6 rounded-full border-2 border-white bg-white flex items-center justify-center`}>
+        <span className='text-xs'>{item.type === 'food' ? '🍕' : '✈️'}</span>
       </div>
     </Marker>,
   ), [items]);
@@ -51,7 +51,7 @@ export const MapView = ({ items }: Props) => {
           zoom: 11,
         }}
         style={{ height: 600 }}
-        mapStyle="mapbox://styles/mapbox/light-v11"
+        mapStyle="mapbox://styles/mapbox/streets-v12"
       >
         <NavigationControl />
         {...markers}  
