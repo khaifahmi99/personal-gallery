@@ -15,16 +15,16 @@ export default function SummaryHeader({ title, link, subtitle, description, them
   const textClass = getThemedTextColor(theme);
 
   return (
-    <div className="container mx-auto px-4 md:px-0 pb-16 md:pb-32">
+    <div className="container mx-auto px-2 pb-16 md:pb-32">
       <Link href={link} className={`flex flex-row items-center gap-4 mb-8 ${textClass} w-1/6`}>
-        <div className="text-xl px-2 lg:px-0">{title}</div>
+        <div className="text-xl px-2">{title}</div>
         <div className="text-xl pb-1"><FaArrowRight /></div>
       </Link>
       <div className="grid grid-cols-2 gap-2 md:gap-48 items-center">
         <div className="col-span-2 md:col-span-1">
-          <h2 className="text-2xl md:text-4xl px-2 lg:px-0 font-bold">{subtitle}</h2>
+          <h2 className="text-2xl md:text-4xl px-2 font-bold">{subtitle}</h2>
         </div>
-        <div className="col-span-2 md:col-span-1 text-zinc-500 px-2 lg:px-0 text-justify">
+        <div className="col-span-2 md:col-span-1 text-zinc-500 px-2 text-justify">
           <p>{description}</p>
         </div>
       </div>

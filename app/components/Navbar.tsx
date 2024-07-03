@@ -5,7 +5,7 @@ import NavbarLogo from "./NavbarLogo";
 
 export default function Navbar() {
   return (
-    <div className="navbar w-full absolute top-10 text-zinc-900">
+    <div className="navbar w-full px-2 absolute top-10 text-zinc-900">
       <div className="flex flex-row justify-between bg-white border-2 border-emerald-400 container mx-auto items-center rounded-2xl py-1">
         <NavbarLogo />
         <ul className="hidden lg:flex flex-row gap-4 px-4">

@@ -18,7 +18,7 @@ export default function SummaryWithGallery({ images, theme, ...rest }: Props) {
           <div key={i} className={`${cls} col-span-1 py-16 md:py-32 px-4 md:px-12 min-h-96 h-full`}>
           </div>  
         ))}
-        <div className="absolute m-auto left-0 right-0 container inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
+        <div className="absolute m-auto left-0 right-0 container inline-flex flex-nowrap overflow-hidden lg:[mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
           <div className="flex justify-center items-center h-96 animate-infinite-scroll">
             {images.map((image, index) => (
               <div
