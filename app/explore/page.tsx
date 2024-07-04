@@ -2,6 +2,7 @@ import { Suspense } from "react";
 
 import { Data } from "../_data";
 import { MapView } from "./map-view";
+import SparklesText from "@/components/magicui/sparkles-text";
 
 export default async function Explore() {
   const { foods: eats } = await Data.query.getFoods({ fetchAll: true });
@@ -18,7 +19,11 @@ export default async function Explore() {
   return (
     <section className="min-h-screen pt-48 w-full">
       <div className="mx-auto container pb-16">
-        <h1 className="text-center text-2xl md:text-5xl uppercase">Explore</h1>
+        <SparklesText 
+          className='text-center text-2xl md:5xl uppercase' 
+          text='Explore' 
+          colors={{ first: '#4ade80', second: '#a78bfa',}}
+        />
         <Suspense fallback={<p>Generating Map...</p>}>
           <MapView items={items} />
         </Suspense>

@@ -1,6 +1,7 @@
 import { Suspense } from 'react';
 import data from '../../../public/assets/travels/travels.json';
 import TravelItemGrid from './TravelItemGrid';
+import SparklesText from '@/components/magicui/sparkles-text';
 
 type Params = {
   params: {
@@ -27,7 +28,11 @@ export default function Travel({ params, searchParams }: Params) {
   return (
     <section className='min-h-screen pt-48 w-full'>
       <div className='mx-auto container'>
-        <h1 className='text-center text-2xl md:5xl uppercase'>{item.title}</h1>
+        <SparklesText 
+          className='text-center text-2xl md:5xl uppercase' 
+          text={item.title} 
+          colors={{ first: '#4ade80', second: '#a78bfa',}}
+        />
       </div>
       <Suspense fallback={<p>Fetching Images...</p>}>
         <TravelItemGrid currentPage={currentPage} item={item} />

@@ -1,5 +1,6 @@
 import { Suspense } from "react";
 import EatGrid from "./EatGrid";
+import SparklesText from "@/components/magicui/sparkles-text";
 
 interface Props {
   searchParams?: {
@@ -12,7 +13,11 @@ export default function Eats({ searchParams }: Props) {
   return (
     <section className="min-h-screen pt-48 w-full">
       <div className="mx-auto container">
-        <h1 className="text-center text-2xl md:text-5xl uppercase">Eats</h1>
+        <SparklesText 
+          className='text-center text-2xl md:5xl uppercase' 
+          text='Eats' 
+          colors={{ first: '#4ade80', second: '#a78bfa',}}
+        />
       </div>
       <Suspense fallback={<p>Fetching Images...</p>}>
         <EatGrid currentPage={currentPage} />

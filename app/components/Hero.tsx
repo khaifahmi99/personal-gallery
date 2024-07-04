@@ -45,19 +45,19 @@ export default function Hero(props: Props) {
                 src={Food1}
                 alt="Image 1"
                 width={192}
-                className="hover:scale-110 translate-x-32 translate-y-8 rounded-lg shadow-md z-10 border-2 border-emerald-400 rotate-12 transition"
+                className="hover:scale-110 translate-x-32 translate-y-8 rounded-lg shadow-md z-10 border-2 border-stone-400 hover:border-emerald-400 rotate-12 transition"
               />
               <Image
                 src={Travel1}
                 alt="Image 2"
                 width={192}
-                className="hover:scale-110 -translate-x-32 translate-y-16 absolute top-0 rounded-lg shadow-md z-0 border-2 border-emerald-400 -rotate-6 transition"
+                className="hover:scale-110 -translate-x-32 translate-y-16 absolute top-0 rounded-lg shadow-md z-0 border-2 border-stone-400 hover:border-emerald-400 -rotate-6 transition"
               />
               <Image
                 src={Travel2}
                 alt="Image 3"
                 width={192}
-                className="hover:scale-110 absolute top-0 rounded-lg shadow-md z-20 border-2 border-emerald-400 transition"
+                className="hover:scale-110 absolute top-0 rounded-lg shadow-md z-20 border-2 border-stone-400 hover:border-emerald-400 transition"
               />
             </div>
           </div>
