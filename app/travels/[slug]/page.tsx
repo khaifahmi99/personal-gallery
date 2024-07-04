@@ -28,10 +28,10 @@ export default function Travel({ params, searchParams }: Params) {
     <section className='min-h-screen pt-48 w-full'>
       <div className='mx-auto container'>
         <h1 className='text-center text-2xl md:5xl uppercase'>{item.title}</h1>
-        <Suspense fallback={<p>Fetching Images...</p>}>
-          <TravelItemGrid currentPage={currentPage} item={item} />
-        </Suspense>
       </div>
+      <Suspense fallback={<p>Fetching Images...</p>}>
+        <TravelItemGrid currentPage={currentPage} item={item} />
+      </Suspense>
     </section>
   )
 }

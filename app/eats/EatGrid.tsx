@@ -42,7 +42,9 @@ export default async function PhotoGrid({ currentPage }: Props) {
           </div>
         ))}
       </div>
-      <PaginationControl currentPage={currentPage} totalPages={totalPages} />
+      <div className="container px-2 mx-auto">
+        <PaginationControl currentPage={currentPage} totalPages={totalPages} />
+      </div>
     </div>
   )
 }

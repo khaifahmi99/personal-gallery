@@ -17,7 +17,7 @@ export default async function Explore() {
 
   return (
     <section className="min-h-screen pt-48 w-full">
-      <div className="mx-auto container">
+      <div className="mx-auto container pb-16">
         <h1 className="text-center text-2xl md:text-5xl uppercase">Explore</h1>
         <Suspense fallback={<p>Generating Map...</p>}>
           <MapView items={items} />

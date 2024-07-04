@@ -31,7 +31,9 @@ export default async function TravelCollectionGrid({ currentPage, item }: Props)
           </div>
         ))}
       </div>
-      <PaginationControl currentPage={currentPage} totalPages={totalPages} />
+      <div className="container mx-auto px-2">
+        <PaginationControl currentPage={currentPage} totalPages={totalPages} />
+      </div>
     </div>
   )
 }
