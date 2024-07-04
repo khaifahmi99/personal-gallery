@@ -16,9 +16,9 @@ export default function SummaryHeader({ title, link, subtitle, description, them
 
   return (
     <div className="container mx-auto px-2 pb-16 md:pb-32">
-      <Link href={link} className={`flex flex-row items-center gap-4 mb-8 ${textClass} w-1/6`}>
+      <Link href={link} className={`group flex flex-row items-center gap-4 mb-8 ${textClass} w-1/6`}>
         <div className="text-xl px-2">{title}</div>
-        <div className="text-xl pb-1"><FaArrowRight /></div>
+        <div className="text-xl pb-1 mr-2 group-hover:translate-x-1"><FaArrowRight /></div>
       </Link>
       <div className="grid grid-cols-2 gap-2 md:gap-48 items-center">
         <div className="col-span-2 md:col-span-1">
