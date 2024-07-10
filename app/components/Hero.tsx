@@ -8,19 +8,19 @@ import Link from "next/link";
 import Counter, { CounterProps } from "./Counter";
 import ShineBorder from "@/components/magicui/shine-border";
 import BoxReveal from "@/components/magicui/box-reveal";
+import { FlipWords } from "@/components/aceternityui/flip-words";
 
 type Props = CounterProps;
 
 export default function Hero(props: Props) {
   return (
     <div className='bg-grid'>
-      <section className='w-full pt-48 pb-20 bg-gray-800 bg-radial'>
+      <section className='w-full pt-48 pb-20 bg-slate-800 bg-radial'>
         <div className='container px-4 mx-auto flex text-zinc-100 flex-col gap-8'>
-          <BoxReveal boxColor={"black"} duration={0.1}>
-            <h1 className='text-2xl lg:text-5xl font-bold text-emerald-400'>
-              A Gallery of Experiences:<br />Travel, Food & Collections That Tell a Story
-            </h1>
-          </BoxReveal>
+          <div className='text-2xl lg:text-5xl font-bold text-slate-100 flex flex-col'>
+            <span>A Gallery of Experiences:</span>
+            <span className="pl-2 md:pl-8"><FlipWords className="text-emerald-400" words={['Foods', 'Travels', 'Collections']} /> That Tell a Story</span> 
+          </div>
           <div className='grid grid-cols-12'>
             <div className='col-span-12 lg:col-span-7'>
               <div className="text-sm md:text-base py-2 md:py-8 lg:py-12">
@@ -42,7 +42,7 @@ export default function Hero(props: Props) {
                       color={["#4ade80", "#a78bfa", "#FFBE7B"]}
                       borderWidth={2}
                     >
-                      <div className='flex flex-row justify-between items-center px-2 gap-2'>
+                      <div className='flex flex-row justify-between items-center px-2 gap-2 text-emerald-400'>
                         <div className='text-lg'>
                           Explore World Map
                         </div>
