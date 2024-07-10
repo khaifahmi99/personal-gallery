@@ -2,6 +2,7 @@ import { Suspense } from 'react';
 import data from '../../../public/assets/travels/travels.json';
 import TravelItemGrid from './TravelItemGrid';
 import SparklesText from '@/components/magicui/sparkles-text';
+import { LampTitle } from '@/components/aceternityui/lamp';
 
 type Params = {
   params: {
@@ -27,16 +28,18 @@ export default function Travel({ params, searchParams }: Params) {
 
   return (
     <section className='min-h-screen pt-48 w-full'>
-      <div className='mx-auto container'>
-        <SparklesText 
-          className='text-center text-2xl md:5xl uppercase' 
-          text={item.title} 
-          colors={{ first: '#4ade80', second: '#a78bfa',}}
-        />
-      </div>
+      <LampTitle>
+      <h1 
+          className="bg-gradient-to-br from-slate-50 to-slate-200 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-6xl"
+        >
+          {item.title}
+        </h1>
+      </LampTitle>
+      <div className="lg:-translate-y-36 translate-0">   
       <Suspense fallback={<p>Fetching Images...</p>}>
         <TravelItemGrid currentPage={currentPage} item={item} />
       </Suspense>
+      </div>
     </section>
   )
 }

@@ -2,7 +2,7 @@ import { Suspense } from "react";
 
 import { Data } from "../_data";
 import { MapView } from "./map-view";
-import SparklesText from "@/components/magicui/sparkles-text";
+import { LampTitle } from "@/components/aceternityui/lamp";
 
 export default async function Explore() {
   const { foods: eats } = await Data.query.getFoods({ fetchAll: true });
@@ -18,12 +18,14 @@ export default async function Explore() {
 
   return (
     <section className="min-h-screen pt-48 w-full">
-      <div className="mx-auto container pb-16">
-        <SparklesText 
-          className='text-center text-2xl md:5xl uppercase' 
-          text='Explore' 
-          colors={{ first: '#4ade80', second: '#a78bfa',}}
-        />
+      <LampTitle>
+      <h1 
+          className="bg-gradient-to-br from-slate-50 to-slate-200 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-6xl"
+        >
+          Explore
+        </h1>      
+      </LampTitle>
+      <div className="lg:-translate-y-36 translate-0">  
         <Suspense fallback={<p>Generating Map...</p>}>
           <MapView items={items} />
         </Suspense>
