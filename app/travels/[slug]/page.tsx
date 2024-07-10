@@ -1,7 +1,6 @@
 import { Suspense } from 'react';
 import data from '../../../public/assets/travels/travels.json';
 import TravelItemGrid from './TravelItemGrid';
-import SparklesText from '@/components/magicui/sparkles-text';
 import { LampTitle } from '@/components/aceternityui/lamp';
 
 type Params = {

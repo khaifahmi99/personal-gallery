@@ -1,6 +1,5 @@
 import { Suspense } from "react";
 import TravelCollectionGrid from "./TravelCollectionGrid";
-import SparklesText from "@/components/magicui/sparkles-text";
 import { LampTitle } from "@/components/aceternityui/lamp";
 
 interface Props {
