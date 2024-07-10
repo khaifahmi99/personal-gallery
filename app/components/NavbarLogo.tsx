@@ -20,7 +20,7 @@ export default function NavbarLogo() {
       ) : (
         <div className="flex flex-row gap-2 text-zinc-900 text-2xl uppercase">
           <h2>/</h2>
-          {lastLayer}
+          {lastLayer?.replaceAll('-', ' ')}
         </div>
         
       )}
