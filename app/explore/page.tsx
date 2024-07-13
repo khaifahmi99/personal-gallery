@@ -8,11 +8,22 @@ export default async function Explore() {
   const { foods: eats } = await Data.query.getFoods({ fetchAll: true });
   const foodPlaces = eats
   .filter(eat => eat.coordinates !== undefined)
-  .map(({ restaurantName, coordinates }) => ({ name: restaurantName ?? 'Unknown', coordinates: coordinates as [number, number], type: 'food' as ('travel' | 'food') }));
+  .map(food => ({ 
+    name: food.restaurantName ?? 'Unknown', 
+    coordinates: food.coordinates as [number, number], 
+    type: 'food' as ('travel' | 'food'),
+    metadata: food,
+  }));
 
   const { travels } = await Data.query.getTravels({ fetchAll: true });
   const travelPlaces = travels
-    .map(({ title, coordinates, id }) => ({ name: title, coordinates, type: 'travel' as ('travel' | 'food'), link: `/travels/${id}` }));
+    .map(travel => ({ 
+      name: travel.title, 
+      coordinates: travel.coordinates, 
+      type: 'travel' as ('travel' | 'food'), 
+      link: `/travels/${travel.id}`,
+      metadata: travel
+    }));
 
   const items = [...foodPlaces, ...travelPlaces];
 
