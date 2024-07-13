@@ -127,8 +127,8 @@ const showcaseFood = (food: Food) => {
         <div className='text-sm grow'>
           {description}
         </div>
-        <div className='text-xs flex flex-row-reverse gap-1'>{cuisine.map(c => (
-          <div className='bg-emerald-200 opacity-75 px-2 py-1 rounded-xl'>
+        <div className='text-xs flex flex-row-reverse gap-1'>{cuisine.map((c, idx) => (
+          <div key={idx} className='bg-emerald-200 opacity-75 px-2 py-1 rounded-xl'>
             {c}
           </div>
         ))}</div>
