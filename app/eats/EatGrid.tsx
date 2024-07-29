@@ -11,7 +11,7 @@ export default async function PhotoGrid({ currentPage }: Props) {
 
   return (
     <div className="flex flex-col gap-8 py-16">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1">
+      <div className="w-full max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1">
         {foods.map((food, i) => (
           <div key={i} className="relative">
             <Image
@@ -19,7 +19,6 @@ export default async function PhotoGrid({ currentPage }: Props) {
               width={512}
               height={1024}
               alt={`Image ${i + 1}`}
-              className="hover:brightness-50"
             />
             <div className='absolute top-2 left-2 bg-opacity-50 bg-indigo-700 rounded-lg px-2 text-white cursor-default pointer-events-none'>
               📸 {food.capturedOn}
