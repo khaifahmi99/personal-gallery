@@ -27,7 +27,7 @@ export default async function PhotoGrid({ currentPage }: Props) {
               <div className='p-2 truncate'>
                 <div className='main-header pb-4'>
                   <div className='text-lg font-bold'>
-                      {food.restaurantName ? `📍 ${food.restaurantName}` : '🏪🧑‍🍳'}
+                    {food.restaurantName ? `📍 ${food.restaurantName}` : '🏪🧑‍🍳'}
                   </div>
                   <div className='italic'>
                     {food.city}, {food.country}
@@ -41,7 +41,7 @@ export default async function PhotoGrid({ currentPage }: Props) {
           </div>
         ))}
       </div>
-      <div className="container px-2 mx-auto">
+      <div className="w-full max-w-7xl mx-auto">
         <PaginationControl currentPage={currentPage} totalPages={totalPages} />
       </div>
     </div>

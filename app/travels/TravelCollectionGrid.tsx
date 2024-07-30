@@ -26,7 +26,7 @@ export default async function TravelCollectionGrid({ currentPage }: Props) {
               <div className='p-2 truncate'>
                 <div className='main-header pb-4'>
                   <div>
-                   <span>📍</span><span className='italic'>{image.title}</span>
+                    <span>📍</span><span className='italic'>{image.title}</span>
                   </div>
                 </div>
               </div>
@@ -34,7 +34,7 @@ export default async function TravelCollectionGrid({ currentPage }: Props) {
           </Link>
         ))}
       </div>
-      <div className="container mx-auto px-2">
+      <div className="w-full max-w-7xl mx-auto">
         <PaginationControl currentPage={currentPage} totalPages={totalPages} />
       </div>
     </div>

@@ -11,7 +11,7 @@ interface Props {
 
 export default async function TravelCollectionGrid({ currentPage, item }: Props) {
   const totalPages = Math.ceil(item.photos.length / PAGE_SIZE);
-  
+
   const startIndex = (currentPage - 1) * PAGE_SIZE;
   const endIndex = startIndex + PAGE_SIZE;
   const links = item.photos.slice(startIndex, endIndex).map(photo => `https://d3ae3kedxtitrj.cloudfront.net/travel/${item.folder}/${photo}`)
@@ -31,7 +31,7 @@ export default async function TravelCollectionGrid({ currentPage, item }: Props)
           </div>
         ))}
       </div>
-      <div className="container mx-auto px-2">
+      <div className="w-full max-w-7xl mx-auto">
         <PaginationControl currentPage={currentPage} totalPages={totalPages} />
       </div>
     </div>

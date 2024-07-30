@@ -19,7 +19,7 @@ export default function Hero(props: Props) {
         <div className='container px-4 mx-auto flex text-zinc-100 flex-col gap-8'>
           <div className='text-2xl lg:text-5xl font-bold text-slate-100 flex flex-col'>
             <span>A Gallery of Experiences:</span>
-            <span className="pl-2 md:pl-8"><FlipWords className="text-emerald-400" words={['Foods', 'Travels', 'Collections']} /> That Tell a Story</span> 
+            <span className="pl-2 md:pl-8"><FlipWords className="text-emerald-400" words={['Foods', 'Travels', 'Collections']} /> That Tell a Story</span>
           </div>
           <div className='grid grid-cols-12'>
             <div className='col-span-12 lg:col-span-7'>
@@ -27,11 +27,11 @@ export default function Hero(props: Props) {
                 <BoxReveal boxColor={"black"} duration={0.25}>
                   <h2>Welcome to a journey through my experiences!</h2>
                 </BoxReveal>
-                <BoxReveal boxColor={"black"} duration={0.5}>         
+                <BoxReveal boxColor={"black"} duration={0.5}>
                   <>
                     <br /><br />
                     <h2>This gallery is a glimpse into my travels, the delicious food I&lsquo;ve encountered, and the unique collections I&lsquo;ve built along the way. Each image, story, and treasure tells a tale of exploration, discovery, and the joy of finding beauty in the unexpected. Dive in and explore the world through my lens, where every bite, sight, and find becomes a cherished memory.</h2>
-                  </>           
+                  </>
                 </BoxReveal>
               </div>
               <div className='flex flex-col md:flex-row gap-4 pt-4 lg:pt-0'>
@@ -46,7 +46,7 @@ export default function Hero(props: Props) {
                         <div className='text-lg'>
                           Explore World Map
                         </div>
-                        <div className="mr-2 w-4 h-4 group-hover:translate-x-1"><FaArrowRight /></div>                  
+                        <div className="mr-2 w-4 h-4 group-hover:translate-x-1"><FaArrowRight /></div>
                       </div>
                     </ShineBorder>
                   </Link>

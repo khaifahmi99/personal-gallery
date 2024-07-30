@@ -22,7 +22,7 @@ export default function NavbarLogo() {
           <h2>/</h2>
           {lastLayer?.replaceAll('-', ' ')}
         </div>
-        
+
       )}
     </div>
   )
