@@ -9,6 +9,7 @@ import { CiLink } from 'react-icons/ci';
 import { Travel } from '../_types/travel';
 import { Food } from '../_types/food';
 import Image from 'next/image';
+import { useSearchParams } from 'next/navigation';
 
 interface Item {
   name: string;
@@ -23,13 +24,18 @@ type Props = {
 };
 
 export const MapView = ({ items }: Props) => {
-  const [popupInfo, setPopupInfo] = useState<Item | null>(null);
+  const searchParams = useSearchParams();
 
-  const markers = useMemo(() => items.map((item, idx) => 
-    <Marker 
+  const id = searchParams.get('id');
+  const initialItem = id ? items.find(item => item.metadata.id === id) : undefined;
+
+  const [popupInfo, setPopupInfo] = useState<Item | null>(initialItem ?? null);
+
+  const markers = useMemo(() => items.map((item, idx) =>
+    <Marker
       key={idx}
-      latitude={item.coordinates[0]} 
-      longitude={item.coordinates[1]} 
+      latitude={item.coordinates[0]}
+      longitude={item.coordinates[1]}
       anchor="top"
       onClick={e => {
         // If we let the click event propagates to the map, it will immediately close the popup
@@ -57,11 +63,11 @@ export const MapView = ({ items }: Props) => {
         <div className='hidden lg:flex flex-col bg-white rounded-lg'>
           <div className='flex flex-col gap-4 p-4 text-zinc-800 h-full rounded-lg'>
             <div className='text-xl font-bold'>Information</div>
-            {popupInfo 
-              ? (<div className='grow'>{showcaseBody}</div>) 
+            {popupInfo
+              ? (<div className='grow'>{showcaseBody}</div>)
               : <div className='text-zinc-500'>Please click on a pin on the map to see details</div>}
           </div>
-        </div>        
+        </div>
         <Map
           reuseMaps
           mapboxAccessToken={process.env.NEXT_PUBLIC_MAPBOX_TOKEN ?? ''}
@@ -74,7 +80,7 @@ export const MapView = ({ items }: Props) => {
           mapStyle="mapbox://styles/mapbox/streets-v12"
         >
           <NavigationControl />
-          {...markers}  
+          {...markers}
           {popupInfo && (
             <Popup
               anchor="bottom"
@@ -97,8 +103,8 @@ export const MapView = ({ items }: Props) => {
 }
 
 const showcaseFood = (food: Food) => {
-  const { 
-    restaurantName, city, country, 
+  const {
+    restaurantName, city, country,
     description,
     createdAt, cuisine,
   } = food;
@@ -158,7 +164,7 @@ const showcaseTravel = (travel: Travel, link?: string) => {
         <div className='flex flex-row gap-1'>
           <div className='text-xl font-bold'>{title}</div>
           {link && <Link className='text-emerald-600' href={link}><CiLink size={16} /></Link>}
-        </div>      
+        </div>
         <div className='text-sm'>{new Date(date).toLocaleDateString()}</div>
       </div>
       <div className='text-zinc-500 grow'>{location}</div>
