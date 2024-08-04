@@ -126,15 +126,30 @@ const showcaseFood = (food: Food) => {
 
   const thumbnail = food.images[0];
 
+  const keyStr =
+    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";
+
+  const triplet = (e1: number, e2: number, e3: number) =>
+    keyStr.charAt(e1 >> 2) +
+    keyStr.charAt(((e1 & 3) << 4) | (e2 >> 4)) +
+    keyStr.charAt(((e2 & 15) << 2) | (e3 >> 6)) +
+    keyStr.charAt(e3 & 63);
+
+  const rgbDataURL = (r: number, g: number, b: number) =>
+    `data:image/jpeg;base64,R0lGODlhAQABAPAA${triplet(0, r, g) + triplet(b, 255, 255)
+    }/yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==`;
+
   return (
     <div className='flex flex-col gap-2 text-zinc-900 h-full'>
       <div className='relative h-80'>
-        {/* TODO: show spinner while loading image or when switching image */}
         <Image
+          key={food.id}
           alt={restaurantName ?? food.id}
           src={thumbnail}
           fill
           style={{ objectFit: 'cover' }}
+          placeholder='blur'
+          blurDataURL={rgbDataURL(44, 50, 56)}
         />
       </div>
       <div className='flex flex-row justify-between items-center pt-4'>
@@ -164,15 +179,30 @@ const showcaseTravel = (travel: Travel, link?: string) => {
     cover, date
   } = travel;
 
+  const keyStr =
+    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";
+
+  const triplet = (e1: number, e2: number, e3: number) =>
+    keyStr.charAt(e1 >> 2) +
+    keyStr.charAt(((e1 & 3) << 4) | (e2 >> 4)) +
+    keyStr.charAt(((e2 & 15) << 2) | (e3 >> 6)) +
+    keyStr.charAt(e3 & 63);
+
+  const rgbDataURL = (r: number, g: number, b: number) =>
+    `data:image/jpeg;base64,R0lGODlhAQABAPAA${triplet(0, r, g) + triplet(b, 255, 255)
+    }/yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==`;
+
   return (
     <div className='flex flex-col gap-2 text-zinc-900 h-full'>
       <div className='relative h-80'>
-        {/* TODO: show spinner while loading image or when switching image */}
         <Image
+          key={travel.id}
           alt={title}
           src={cover}
           fill
           style={{ objectFit: 'cover' }}
+          placeholder='blur'
+          blurDataURL={rgbDataURL(44, 50, 56)}
         />
       </div>
       <div className='flex flex-row justify-between items-center pt-4'>
