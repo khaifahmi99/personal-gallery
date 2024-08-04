@@ -15,6 +15,7 @@ export default async function PhotoGrid({ currentPage }: Props) {
         {foods.map((food, i) => (
           <div key={i} className="relative">
             <Image
+              key={food.id}
               src={food.images[0]}
               width={512}
               height={1024}

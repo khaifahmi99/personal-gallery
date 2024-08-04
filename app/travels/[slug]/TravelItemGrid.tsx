@@ -22,6 +22,7 @@ export default async function TravelCollectionGrid({ currentPage, item }: Props)
         {links.map((image, i) => (
           <div key={i}>
             <Image
+              key={image}
               src={image}
               width={512}
               height={1024}
