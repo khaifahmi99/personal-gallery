@@ -6,6 +6,7 @@ import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import { Commands } from "./components/Commands";
 
 const rubik = Rubik({ subsets: ["latin"] });
 
@@ -31,6 +32,7 @@ export default function RootLayout({
             website: 'https://kfzaki.com/',
           }}
         />
+        <Commands />
         <SpeedInsights />
         <Analytics />
       </body>

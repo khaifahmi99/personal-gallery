@@ -1,9 +1,9 @@
 'use client';
 
-import Map, { Marker, NavigationControl, Popup } from 'react-map-gl';
+import Map, { Marker, NavigationControl, Popup, ViewState } from 'react-map-gl';
 
 import 'mapbox-gl/dist/mapbox-gl.css';
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import Link from 'next/link';
 import { CiLink } from 'react-icons/ci';
 import { Travel } from '../_types/travel';
@@ -23,6 +23,12 @@ type Props = {
   items: Item[];
 };
 
+const defaultViewState = {
+  latitude: -37.81,
+  longitude: 144.96,
+  zoom: 11,
+}
+
 export const MapView = ({ items }: Props) => {
   const searchParams = useSearchParams();
 
@@ -30,6 +36,19 @@ export const MapView = ({ items }: Props) => {
   const initialItem = id ? items.find(item => item.metadata.id === id) : undefined;
 
   const [popupInfo, setPopupInfo] = useState<Item | null>(initialItem ?? null);
+
+  const initialViewState = initialItem ? {
+    latitude: initialItem.coordinates[0],
+    longitude: initialItem.coordinates[1],
+    zoom: 11
+  } : defaultViewState;
+
+  useEffect(() => {
+    const selected = items.find(item => item.metadata.id === id);
+    if (selected) {
+      setPopupInfo(selected);
+    }
+  }, [id])
 
   const markers = useMemo(() => items.map((item, idx) =>
     <Marker
@@ -71,11 +90,7 @@ export const MapView = ({ items }: Props) => {
         <Map
           reuseMaps
           mapboxAccessToken={process.env.NEXT_PUBLIC_MAPBOX_TOKEN ?? ''}
-          initialViewState={{
-            latitude: -37.81,
-            longitude: 144.96,
-            zoom: 11,
-          }}
+          initialViewState={initialViewState}
           style={{ height: 600, borderRadius: 8 }}
           mapStyle="mapbox://styles/mapbox/streets-v12"
         >
