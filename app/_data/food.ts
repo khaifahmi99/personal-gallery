@@ -24,7 +24,7 @@ export const getFoods = async ({ pageNumber = 1, fetchAll = false }: Props) => {
 
   const foodRecords: Food[] = foods
     .reverse()
-    .slice(startIndex, fetchAll ? foods.length - 1 : endIndex)
+    .slice(startIndex, fetchAll ? foods.length : endIndex)
     .map((rawFood, i) => {
       return {
         id: rawFood["Restaurant Name"] ?? `food-${i}`,
