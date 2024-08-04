@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { IoIosLink, IoLogoFacebook, IoLogoGithub, IoLogoInstagram, IoLogoLinkedin, IoLogoTwitter, IoLogoYoutube } from "react-icons/io";
 import { IoLogoTiktok } from "react-icons/io5";
+import { Categories } from "./Categories";
 
 interface Props {
   emailAddress?: string;
@@ -55,10 +56,10 @@ export default function Footer({ socialMedia }: Props) {
         </a>
       )}
       {socialMedia.linkedin && (
-          <a target="_blank" href={socialMedia.linkedin} className="hover:cursor-pointer opacity-75 hover:opacity-100">
-            <IoLogoLinkedin size='2em' />
-          </a>
-        )}
+        <a target="_blank" href={socialMedia.linkedin} className="hover:cursor-pointer opacity-75 hover:opacity-100">
+          <IoLogoLinkedin size='2em' />
+        </a>
+      )}
       {socialMedia.github && (
         <a target="_blank" href={socialMedia.github} className="hover:cursor-pointer opacity-75 hover:opacity-100">
           <IoLogoGithub size='1.75em' />
@@ -75,6 +76,7 @@ export default function Footer({ socialMedia }: Props) {
   return (
     <div className='bg-grid'>
       <div className='bg-radial text-emerald-400'>
+        <Categories />
         <div className="flex flex-col md:flex-row md:justify-between items-center text-center space-y-8 md:space-y-0 py-8 container mx-auto">
           {socials}
           <div className="flex flex-col md:text-right">

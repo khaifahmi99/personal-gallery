@@ -27,9 +27,9 @@ export default async function Home() {
     <main className="flex flex-col min-h-screen">
       <Hero items={[{ name: 'Total Images', count: totalImages }, { name: 'Restaurants', count: totalFoodRecords }, { name: 'Travel Places', count: totalTravelPlaces }]} />
       <div id='travels'>
-        <SummaryWithTwoExamples 
-          title='TRAVELS' 
-          subtitle='One pushpin at a time across the globe' 
+        <SummaryWithTwoExamples
+          title='TRAVELS'
+          subtitle='One pushpin at a time across the globe'
           description="My mind won't be able to accurately remember places in detail over time, so I captured the memories while the view still stands. Hereby, I elect you to witness the beauty of the world through the lenses of my eyes. This is where dreams meet reality."
           link='/travels'
           contents={[
@@ -40,9 +40,9 @@ export default async function Home() {
         />
       </div>
       <div id="eats">
-        <SummaryWithGallery 
-          title='EATS' 
-          subtitle="Looks can be deceiving but these pictures won't!" 
+        <SummaryWithGallery
+          title='EATS'
+          subtitle="Looks can be deceiving but these pictures won't!"
           description="The exhibition of my entire gallery of food I've tasted in the places where I had travelled to; embracing parallelism through visual connection. Meals, cuisines, desserts, and delectables, served on a plate as a feast to the audience."
           link='/eats'
           theme='rose'
