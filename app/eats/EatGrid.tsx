@@ -21,9 +21,10 @@ export default async function PhotoGrid({ currentPage }: Props) {
               height={1024}
               alt={`Image ${i + 1}`}
             />
-            <div className='absolute top-2 left-2 bg-opacity-50 bg-indigo-700 rounded-lg px-2 text-white cursor-default pointer-events-none'>
+            <div className='absolute top-2 left-2 bg-indigo-700/75 rounded-lg px-2 text-white cursor-default pointer-events-none'>
               📸 {food.capturedOn}
             </div>
+            <div className="absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-black/80 to-transparent"></div>
             <div className='main-section absolute bottom-0 inset-x-0 text-white pointer-events-none'>
               <div className='p-2 truncate'>
                 <div className='main-header pb-4'>
