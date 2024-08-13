@@ -1,0 +1,53 @@
+{
+  "type": "object",
+  "properties": {
+    "models": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "displayName": {
+            "type": "string"
+          },
+          "seriesName": {
+            "type": "string"
+          },
+          "grade": {
+            "type": "string"
+          },
+          "scale": {
+            "type": "string"
+          },
+          "images": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "purchaseUrls": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "required": [
+        "id",
+        "displayName",
+        "seriesName",
+        "grade",
+        "scale",
+        "images",
+        "purchaseUrls"
+      ]
+    }
+  },
+  "required": [
+    "gunplas"
+  ],
+  "additionalProperties": false
+}
