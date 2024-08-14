@@ -1,0 +1,128 @@
+{
+  "$schema": "https://raw.githubusercontent.com/khaifahmi99/personal-gallery/main/schema/gundam.json",
+  "models": [
+    {
+      "id": "G0221060",
+      "createdDate": "2024-08-01T00:00:00.000Z",
+      "displayName": "Unicorn 02 Banshee Norn Gundam",
+      "seriesName": "Unicorn",
+      "grade": "RG",
+      "scale": "1/144",
+      "images": [
+        "banshee_norn_1.jpg",
+        "banshee_norn_cover.jpg"
+      ],
+      "purchaseUrls": [
+        "https://www.metrohobbies.com.au/products/bandai-rg-1-144-unicorn-02-banshee-norn",
+        "https://www.hobbyco.com.au/products/rg-1-144-unicorn-gundam-02-banshee-norn-1"
+      ]
+    },
+    {
+      "id": "G5058222",
+      "createdDate": "2024-06-01T00:00:00.000Z",
+      "displayName": "MG 1/100 Gundam Barbatos",
+      "seriesName": "Iron-Blooded Orphans",
+      "grade": "MG",
+      "scale": "1/100",
+      "images": [
+        "barbatos_1.jpg",
+        "barbatos_cover.jpg",
+        "barbatos_transparent.png"
+      ],
+      "purchaseUrls": [
+        "https://www.metrohobbies.com.au/products/bandai-mg-1-100-gundam-barbatos",
+        "https://www.hobbyco.com.au/products/mg-1-100-gundam-barbatos"
+      ]
+    },
+    {
+      "id": "G5061618",
+      "createdDate": "2024-04-01T00:00:00.000Z",
+      "displayName": "MBF-P02 Gundam Astray Red Frame",
+      "seriesName": "SEED Destiny Astray",
+      "grade": "RG",
+      "scale": "1/144",
+      "images": [
+        "astray_red_1.jpg",
+        "astray_red_cover.jpg"
+      ],
+      "purchaseUrls": [
+        "https://www.hobbyco.com.au/products/rg-1-144-mbf-p02-gundam-astray-red-frame",
+        "https://www.metrohobbies.com.au/products/bandai-rg-1-144-mbf-p02-gundam-astray-red-frame"
+      ]
+    },
+    {
+      "id": "G5057842",
+      "createdDate": "2024-02-01T00:00:00.000Z",
+      "displayName": "v Gundam",
+      "seriesName": "Char's Counterattack",
+      "grade": "RG",
+      "scale": "1/144",
+      "images": [
+        "v_1.jpg",
+        "v_transparent.png"
+      ],
+      "purchaseUrls": [
+        "https://www.hobbyco.com.au/products/rg-1-144-nu-gundam"
+      ]
+    },
+    {
+      "id": "G5065442",
+      "createdDate": "2023-12-01T00:00:00.000Z",
+      "displayName": "Gundam Epyon",
+      "seriesName": "Wing",
+      "grade": "RG",
+      "scale": "1/144",
+      "images": [
+        "epyon.jpg"
+      ],
+      "purchaseUrls": [
+        "https://www.hobbyco.com.au/products/rg-1-144-gundam-epyon"
+      ]
+    },
+    {
+      "id": "G5065101",
+      "createdDate": "2023-11-01T00:00:00.000Z",
+      "displayName": "Heindree",
+      "seriesName": "The Witch from Mercury",
+      "grade": "HG",
+      "scale": "1/144",
+      "images": [
+        "heindree_1.jpg",
+        "heindree_cover.jpg"
+      ],
+      "purchaseUrls": [
+        "https://www.hobbyco.com.au/products/hg-1-144-heindree"
+      ]
+    },
+    {
+      "id": "G5061596",
+      "createdDate": "2023-10-01T00:00:00.000Z",
+      "displayName": "MS-06F Zaku II",
+      "seriesName": "Multiple",
+      "grade": "RG",
+      "scale": "1/144",
+      "images": [
+        "zaku_ii_1.jpg",
+        "zaku_ii_cover.jpg"
+      ],
+      "purchaseUrls": [
+        "https://www.hobbyco.com.au/products/1-144-rg-ms-06f-zaku-ii"
+      ]
+    },
+    {
+      "id": "G5061606",
+      "createdDate": "2023-09-01T00:00:00.000Z",
+      "displayName": "Strike Freedom Gundam",
+      "seriesName": "SEED Destiny",
+      "grade": "MG",
+      "scale": "1/100",
+      "images": [
+        "strike_freedom_1.jpg",
+        "strike_freedom_cover.jpg"
+      ],
+      "purchaseUrls": [
+        "https://www.hobbyco.com.au/products/mg-1-100-strike-freedom-gundam"
+      ]
+    }
+  ]
+}

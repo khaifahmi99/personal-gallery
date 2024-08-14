@@ -9,6 +9,9 @@
           "id": {
             "type": "string"
           },
+          "createdDate": {
+            "type": "string"
+          },
           "displayName": {
             "type": "string"
           },
@@ -37,6 +40,7 @@
       },
       "required": [
         "id",
+        "createdDate",
         "displayName",
         "seriesName",
         "grade",
