@@ -1,6 +1,7 @@
 import { getGundams } from "@/app/_data/gundam"
 import { LampTitle } from "@/components/aceternityui/lamp";
 import { Display } from "./display";
+import { Suspense } from "react";
 
 export default async function Gundam() {
   const gundams = await getGundams();
@@ -14,7 +15,9 @@ export default async function Gundam() {
           Gundam Collection
         </h1>
       </LampTitle>
-      <Display gundams={gundams} />
+      <Suspense fallback={<p>Fetching Images...</p>}>
+        <Display gundams={gundams} />
+      </Suspense>
     </section>
   )
 }
