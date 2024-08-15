@@ -12,6 +12,9 @@ import Food8 from '../public/food8.jpeg';
 
 import Travel1 from '../public/travel1.jpeg';
 import Travel2 from '../public/travel2.jpeg';
+
+import Gundam from '../public/v_1.jpg';
+
 import SummaryWithGallery from "./components/SummeryWithGallery";
 import SummaryWithExamples from "./components/SummaryWithExamples";
 
@@ -20,12 +23,15 @@ import { Data } from "./_data";
 export default async function Home() {
   const { totalRecords: totalFoodRecords, totalImages: totalFoodImages } = await Data.query.getFoods({});
   const { totalRecords: totalTravelPlaces, totalImages: totalTravelImages } = await Data.query.getTravels({});
+  const gundams = await Data.query.getGundams();
 
-  const totalImages = totalFoodImages + totalTravelImages;
+  const totalCollections = gundams.length;
+
+  const totalImages = totalFoodImages + totalTravelImages + gundams.reduce((prev, curr) => prev + curr.images.length, 0);
 
   return (
     <main className="flex flex-col min-h-screen">
-      <Hero items={[{ name: 'Total Images', count: totalImages }, { name: 'Restaurants', count: totalFoodRecords }, { name: 'Travel Places', count: totalTravelPlaces }]} />
+      <Hero items={[{ name: 'Total Images', count: totalImages }, { name: 'Restaurants', count: totalFoodRecords }, { name: 'Travel Places', count: totalTravelPlaces }, { name: 'Collection Items', count: totalCollections }]} />
       <div id='travels'>
         <SummaryWithTwoExamples
           title='TRAVELS'
@@ -51,18 +57,18 @@ export default async function Home() {
           ]}
         />
       </div>
-      {/* TODO: Activate collections when section is visible */}
-      {/* <SummaryWithExamples 
-        title='COLLECTIONS' 
-        subtitle='Where the dreams meet reality' 
-        description='Grow your audience, build long-lasting customer relationships, and make more sales with powerful, easy-to-use marketing tools. Whether you need to offer discount codes or you want to build your email list, you can do it all with Lemon Squeezy.' 
-        link='/'
+      <SummaryWithExamples
+        title='COLLECTIONS'
+        subtitle='Growing my own kind of collection garden'
+        description='Welcome to a showcase of my most cherished collectibles. From the historical allure of collectible coins to the futuristic craftsmanship of Gundam models, each piece reflects a passion for timeless treasures and imaginative design. Dive in and discover the stories behind each unique item in my collection.'
         contents={[
-          { src: Travel1, link: '/', title: 'Bandai Gundam', subtitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur recusandae voluptates deleniti, quis cum beatae veritatis ipsa eum? Enim cupiditate vel architecto similique eligendi ducimus voluptas velit nostrum eum animi?' },
-          { src: Travel2, link: '/', title: 'Books', subtitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur recusandae voluptates deleniti, quis cum beatae veritatis ipsa eum? Enim cupiditate vel architecto similique eligendi ducimus voluptas velit nostrum eum animi?' }
+          {
+            src: Gundam, link: '/collections/gundam', title: 'Bandai Gundam', subtitle: 'Gundam Plastic models, Gundam Plamo, or Gunpla (ガンプラ, Ganpura) are model kits depicting the mecha machinery and characters of the fictional Gundam multiverse by Bandai. These kits became popular among mecha anime fans and model enthusiasts in Japan and nearby Asian countries beginning in the 1980s. Gundam modeling spread in the 1990s with North America and Europe being exposed to Gundam through television and manga.'
+          },
+          // { src: Travel2, link: '/', title: 'Coins', subtitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur recusandae voluptates deleniti, quis cum beatae veritatis ipsa eum? Enim cupiditate vel architecto similique eligendi ducimus voluptas velit nostrum eum animi?' }
         ]}
         theme='indigo'
-      /> */}
+      />
     </main>
   );
 }

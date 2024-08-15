@@ -16,16 +16,16 @@ function formatNumberLocale(num: number) {
 
 export default function Counter({ items }: CounterProps) {
   return (
-      <div className="mt-24 py-12 lg:py-28">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-4">
-          {items.map((item, index) => (
-            <div key={index} className="flex flex-col items-center justify-center bg-transparent">
-              <AnimatedCounter to={item.count} />
-              <p className="text-zinc-400">{item.name}</p>
-            </div>
-          ))}
-        </div>
+    <div className="mt-24 py-12 lg:py-28">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-12 lg:gap-4">
+        {items.map((item, index) => (
+          <div key={index} className="flex flex-col items-center justify-center bg-transparent">
+            <AnimatedCounter to={item.count} />
+            <p className="text-zinc-400">{item.name}</p>
+          </div>
+        ))}
       </div>
+    </div>
   )
 }
 

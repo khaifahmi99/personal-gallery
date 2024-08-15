@@ -58,16 +58,32 @@ export default function SummaryWithTwoExamples({ contents, theme, ...rest }: Pro
   )
 }
 
-export function getThemedTextColor(theme: ThemeColor) {
+export function getThemedTextColor(theme: ThemeColor, clickable?: boolean) {
+  if (clickable === undefined) {
+    clickable = true; // default to true
+  }
+
   switch (theme) {
     case 'emerald':
-      return ['text-emerald-500 hover:text-emerald-700'];
+      if (clickable) {
+        return ['text-emerald-500 hover:text-emerald-700'];
+      }
+      return ['text-emerald-500']
     case 'indigo':
-      return ['text-indigo-500 hover:text-indigo-700'];
+      if (clickable) {
+        return ['text-indigo-500 hover:text-indigo-700'];
+      }
+      return ['text-indigo-500'];
     case 'rose':
-      return ['text-rose-500 hover:text-rose-700'];
+      if (clickable) {
+        return ['text-rose-500 hover:text-rose-700'];
+      }
+      return ['text-rose-500'];
     case 'amber':
-      return ['text-amber-500 hover:text-amber-700'];
+      if (clickable) {
+        return ['text-amber-500 hover:text-amber-700'];
+      }
+      return ['text-amber-500'];
   }
 }
 
@@ -75,7 +91,7 @@ export function getThemedTextColor(theme: ThemeColor) {
  * Return three shades of the bg-class (100, 300, 400)
  */
 export function getThemedBackgroundPalette(theme: ThemeColor) {
-  switch(theme) {
+  switch (theme) {
     case 'emerald':
       return ['bg-emerald-100', 'bg-emerald-300', 'bg-emerald-400'];
     case 'indigo':

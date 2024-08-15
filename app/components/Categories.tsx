@@ -3,7 +3,7 @@ import React, { useState } from "react";
 
 import { AnimatePresence, motion } from "framer-motion";
 import { CanvasRevealEffect } from "@/components/aceternityui/canvas-reveal-effect";
-import { IceCreamIcon, PlaneIcon, PlusIcon } from "lucide-react";
+import { BotIcon, CoinsIcon, IceCreamIcon, PlaneIcon, PlusIcon } from "lucide-react";
 import Link from "next/link";
 
 export function Categories() {
@@ -15,6 +15,11 @@ export function Categories() {
           [232, 121, 249],
         ]} />
         <Card title='Travels' icon={<PlaneIcon className="w-16 h-16" />} url='/travels' />
+        <Card title='Gundam' icon={<BotIcon className="w-16 h-16" />} url='/collections/gundam' colors={[
+          [0, 0, 205],
+          [100, 100, 255],
+        ]} />
+        {/* <Card title='Coins' icon={<CoinsIcon className="w-16 h-16" />} url='/collections/coins' /> */}
       </div>
     </>
   );

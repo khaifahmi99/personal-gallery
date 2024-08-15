@@ -2,11 +2,13 @@
 
 import React, { useMemo } from "react"
 import { CommandDialog, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList } from "@/components/ui/command"
-import { IceCreamIcon, PlaneTakeoffIcon } from "lucide-react";
+import { BotIcon, IceCreamIcon, PlaneTakeoffIcon } from "lucide-react";
 import { usePathname, useRouter } from "next/navigation";
 
+export type Category = 'food' | 'travel' | 'gundam';
+
 export interface CommandMenuProps {
-  data: { title: string; category: 'food' | 'travel'; url: string; }[]
+  data: { title: string; category: Category; url: string; }[]
 }
 
 export function CommandMenu({ data: results }: CommandMenuProps) {
@@ -59,6 +61,7 @@ export function CommandMenu({ data: results }: CommandMenuProps) {
                   }}>
                   {result.category === 'food' && (<IceCreamIcon className="mr-2 h-4 w-4" />)}
                   {result.category === 'travel' && (<PlaneTakeoffIcon className="mr-2 h-4 w-4" />)}
+                  {result.category === 'gundam' && (<BotIcon className="mr-2 h-4 w-4" />)}
                   <span>{result.title}</span>
                 </CommandItem>
               ))}
