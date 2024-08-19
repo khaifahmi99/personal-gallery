@@ -9,7 +9,7 @@ import Link from "next/link";
 export function Categories() {
   return (
     <>
-      <div className="py-8 flex flex-col lg:flex-row items-center justify-center w-full gap-12 mx-auto px-8">
+      <div className="hidden lg:flex py-8 flex-col lg:flex-row items-center justify-center w-full gap-12 mx-auto px-8">
         <Card title='Eats' icon={<IceCreamIcon className="w-16 h-16" />} url='/eats' colors={[
           [236, 72, 153],
           [232, 121, 249],

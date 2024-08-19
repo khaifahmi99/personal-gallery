@@ -15,7 +15,7 @@ export function Card({ gundam }: Props) {
   return (
     <div className='flex flex-col text-slate-50 bg-white rounded-xl'>
       <div className="grid grid-cols-3">
-        <div className="relative col-span-2 bg-slate-800 rounded-l-lg px-4 py-4">
+        <div className="relative md:col-span-2 bg-slate-800 rounded-l-lg px-4 py-4">
           <div className="flex flex-row justify-between">
             <div>
               <h1 className="text-4xl text-white">{gundam.displayName}</h1>
@@ -52,6 +52,30 @@ export function Card({ gundam }: Props) {
             fill
           />
         </div>
+      </div>
+    </div>
+  )
+}
+
+export function MiniCard({ gundam }: Props) {
+  return (
+    <div className="flex flex-col gap-2 rounded-lg p-4 bg-slate-900">
+      <div className="flex justify-center">
+        <Image
+          src={gundam.images[0]}
+          alt={gundam.displayName}
+          height={240}
+          width={180}
+        />
+      </div>
+      <div>
+        <h1 className="text-lg">{gundam.displayName}</h1>
+        <h2 className="text-sm">from {gundam.seriesName}</h2>
+      </div>
+      <div className="flex flex-row gap-2 text-xs">
+        {gundam.purchaseUrls.map(url => (
+          <BuyButton key={url} link={url} />
+        ))}
       </div>
     </div>
   )
