@@ -1,6 +1,6 @@
 'use client';
 
-import Map, { Marker, NavigationControl, Popup, ViewState } from 'react-map-gl';
+import Map, { Marker, NavigationControl, Popup } from 'react-map-gl';
 
 import 'mapbox-gl/dist/mapbox-gl.css';
 import { useEffect, useMemo, useState } from 'react';
@@ -93,6 +93,7 @@ export const MapView = ({ items }: Props) => {
           initialViewState={initialViewState}
           style={{ height: 600, borderRadius: 8 }}
           mapStyle="mapbox://styles/mapbox/streets-v12"
+          cooperativeGestures
         >
           <NavigationControl />
           {...markers}
