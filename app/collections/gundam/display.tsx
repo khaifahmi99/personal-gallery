@@ -31,7 +31,7 @@ export function Display({ gundams }: Props) {
 
   return (
     <>
-      <div className="hidden lg:flex flex-col lg:-translate-y-36 translate-y-12  gap-4 max-w-7xl mx-auto">
+      <div className="hidden lg:flex flex-col translate-y-12  gap-4 max-w-7xl mx-auto">
         <CardStack
           items={cards}
         />
