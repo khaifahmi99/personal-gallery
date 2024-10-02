@@ -148,7 +148,7 @@ const showcaseFood = (food: Food) => {
           alt={restaurantName ?? food.id}
           src={thumbnail}
           fill
-          style={{ objectFit: 'cover' }}
+          style={{ objectFit: 'contain' }}
           placeholder='blur'
           blurDataURL={rgbDataURL(44, 50, 56)}
         />
