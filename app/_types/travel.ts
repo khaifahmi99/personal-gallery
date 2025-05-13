@@ -6,7 +6,7 @@ export interface RawTravel {
   "collections": string[];
   "captured_on": string;
   "folder": string;
-  "cover": string;
+  "cover": string | null;
   "photos": string[];
   latitude: number;
   longitude: number;

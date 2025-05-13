@@ -34,7 +34,7 @@ export const getTravels = async ({
       ...item,
       id: `${item.folder}`,
       location: `${item.city}, ${item.country}`,
-      cover: `https://d3ae3kedxtitrj.cloudfront.net/travel/${item.folder}/${item.cover}`,
+      cover: item.cover ? `https://d3ae3kedxtitrj.cloudfront.net/travel/${item.folder}/${item.cover}` : "/placeholder.jpg",
       capturedOn: item.captured_on,
       coordinates: [item.latitude, item.longitude],
     }));
