@@ -13,7 +13,31 @@ type Params = {
 };
 
 function getItemBySlug(id: string) {
-  return data.travels.find(travel => travel.folder === id);
+  const item = data.travels.find(travel => travel.folder === id);
+  if (!item) {
+    return null;
+  };
+
+  const isUsingRange = item.photos.length === 1 && item.photos[0].includes("...");
+  if (!isUsingRange) {
+    return item;
+  }
+
+  const [start, end] = item.photos[0].split("...");
+  const prefix = start.slice(0, 2); // "AB"
+  const startNum = parseInt(start.slice(2, 7));
+  const endNum = parseInt(end.slice(2, 7));
+
+  const photos: string[] = [];
+  for (let i = startNum; i <= endNum; i++) {
+    const photo = `${prefix}${String(i).padStart(5, "0")}.jpeg`;
+    photos.push(photo);
+  }
+
+  return {
+    ...item,
+    photos: photos,
+  };
 }
 
 export default function Travel({ params, searchParams }: Params) {
