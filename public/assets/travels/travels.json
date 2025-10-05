@@ -5367,8 +5367,10 @@
       ],
       "captured_on": "iPhone 13 Mini",
       "folder": "2025-iceland",
-      "cover": null,
-      "photos": [],
+      "cover": "IC00350.jpeg",
+      "photos": [
+        "IC00001.jpeg...IC00690.jpeg"
+      ],
       "latitude": 64.9631,
       "longitude": -19.0208
     },
