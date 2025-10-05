@@ -5451,8 +5451,10 @@
       ],
       "captured_on": "iPhone 13 Mini",
       "folder": "2025-hobart",
-      "cover": null,
-      "photos": [],
+      "cover": "HB00044.jpeg",
+      "photos": [
+        "HB00001.jpeg...HB00050.jpeg"
+      ],
       "latitude": -42.8826,
       "longitude": 147.3257
     },
@@ -5466,8 +5468,10 @@
       ],
       "captured_on": "iPhone 13 Mini",
       "folder": "2025-mt-wellington",
-      "cover": null,
-      "photos": [],
+      "cover": "WL00024.jpeg",
+      "photos": [
+        "WL00001.jpeg...WL00027.jpeg"
+      ],
       "latitude": -42.89582,
       "longitude": 147.23722
     },
