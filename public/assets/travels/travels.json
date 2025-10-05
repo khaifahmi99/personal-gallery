@@ -5470,6 +5470,125 @@
       "photos": [],
       "latitude": -42.89582,
       "longitude": 147.23722
+    },
+    {
+      "title": "Tokyo - Japan 2025",
+      "city": "Tokyo",
+      "country": "Japan",
+      "date": "2025-09-03",
+      "collections": [
+        "Japan Summer 2025"
+      ],
+      "captured_on": "iPhone 13 Mini",
+      "folder": "2025-tokyo",
+      "cover": "TK00198.jpeg",
+      "photos": [
+        "TK00001.jpeg...TK00492.jpeg"
+      ],
+      "latitude": 35.6764,
+      "longitude": 139.6500
+    },
+    {
+      "title": "Fujikawaguchiko - Japan 2025",
+      "city": "Fujikawaguchiko",
+      "country": "Japan",
+      "date": "2025-09-07",
+      "collections": [
+        "Japan Summer 2025"
+      ],
+      "captured_on": "iPhone 13 Mini",
+      "folder": "2025-fujikawaguchiko",
+      "cover": "FJ00133.jpeg",
+      "photos": [
+        "FJ00001.jpeg...FJ00133.jpeg"
+      ],
+      "latitude": 35.4973,
+      "longitude": 138.7552
+    },
+    {
+      "title": "Minakami - Japan 2025",
+      "city": "Minakami",
+      "country": "Japan",
+      "date": "2025-09-10",
+      "collections": [
+        "Japan Summer 2025"
+      ],
+      "captured_on": "iPhone 13 Mini",
+      "folder": "2025-minakami",
+      "cover": "MK00036.jpeg",
+      "photos": [
+        "MK00001.jpeg...MK00043.jpeg"
+      ],
+      "latitude": 36.84815018265507,
+      "longitude": 139.04685556928274
+    },
+    {
+      "title": "Nagoya - Japan 2025",
+      "city": "Nagoya",
+      "country": "Japan",
+      "date": "2025-09-11",
+      "collections": [
+        "Japan Summer 2025"
+      ],
+      "captured_on": "iPhone 13 Mini",
+      "folder": "2025-nagoya",
+      "cover": "NG00016.jpeg",
+      "photos": [
+        "NG00001.jpeg...NG00030.jpeg"
+      ],
+      "latitude": 35.1815,
+      "longitude": 136.9066
+    },
+    {
+      "title": "Shirakawa Go - Japan 2025",
+      "city": "Shirakawa",
+      "country": "Japan",
+      "date": "2025-09-12",
+      "collections": [
+        "Japan Summer 2025"
+      ],
+      "captured_on": "iPhone 13 Mini",
+      "folder": "2025-shirakawa",
+      "cover": "SH00228.jpeg",
+      "photos": [
+        "SH00001.jpeg...SH00228.jpeg"
+      ],
+      "latitude": 36.2710,
+      "longitude": 136.8986
+    },
+    {
+      "title": "Kyoto - Japan 2025",
+      "city": "Kyoto",
+      "country": "Japan",
+      "date": "2025-09-13",
+      "collections": [
+        "Japan Summer 2025"
+      ],
+      "captured_on": "iPhone 13 Mini",
+      "folder": "2025-kyoto",
+      "cover": "KY00631.jpeg",
+      "photos": [
+        "KY00001.jpeg...KY00631.jpeg"
+      ],
+      "latitude": 35.0116,
+      "longitude": 135.7681
+    },
+    {
+      "title": "Osaka - Japan 2025",
+      "city": "Osaka",
+      "country": "Japan",
+      "date": "2025-09-17",
+      "collections": [
+        "Japan Summer 2025"
+      ],
+      "captured_on": "iPhone 13 Mini",
+      "folder": "2025-osaka",
+      "cover": "OS00123.jpeg",
+      "photos": [
+        "OS00001.jpeg...OS00159.jpeg"
+      ],
+      "latitude": 34.6937,
+      "longitude": 135.5023
     }
   ]
 }
