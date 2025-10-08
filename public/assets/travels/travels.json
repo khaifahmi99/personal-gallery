@@ -5401,8 +5401,10 @@
       ],
       "captured_on": "iPhone 13 Mini",
       "folder": "2025-oslo",
-      "cover": null,
-      "photos": [],
+      "cover": "OO00157.jpeg",
+      "photos": [
+        "OO00001.jpeg...OO00533.jpeg"
+      ],
       "latitude": 59.9139,
       "longitude": 10.7522
     },
@@ -5416,8 +5418,10 @@
       ],
       "captured_on": "iPhone 13 Mini",
       "folder": "2025-copenhagen",
-      "cover": null,
-      "photos": [],
+      "cover": "CP00453.jpeg",
+      "photos": [
+        "CP00001.jpeg...CP00636.jpeg"
+      ],
       "latitude": 55.6761,
       "longitude": 12.5683
     },
@@ -5431,8 +5435,10 @@
       ],
       "captured_on": "iPhone 13 Mini",
       "folder": "2025-malmo",
-      "cover": null,
-      "photos": [],
+      "cover": "MM00053.jpeg",
+      "photos": [
+        "MM00001.jpeg...MM00142.jpeg"
+      ],
       "latitude": 55.6050,
       "longitude": 13.0038
     },
@@ -5446,8 +5452,10 @@
       ],
       "captured_on": "iPhone 13 Mini",
       "folder": "2025-stockholm",
-      "cover": null,
-      "photos": [],
+      "cover": "ST00025.jpeg",
+      "photos": [
+        "ST00001.jpeg...ST00321.jpeg"
+      ],
       "latitude": 59.3327,
       "longitude": 18.0656
     },
