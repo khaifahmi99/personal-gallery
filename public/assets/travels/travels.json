@@ -5611,6 +5611,74 @@
       ],
       "latitude": 34.6937,
       "longitude": 135.5023
+    },
+    {
+      "title": "Auckland - NZ 2026",
+      "city": "Auckland",
+      "country": "New Zealand",
+      "date": "2026-05-24",
+      "collections": [
+        "North Island NZ 2026"
+      ],
+      "captured_on": "iPhone 13 Mini",
+      "folder": "2026-auckland",
+      "cover": "AKNZ00016.jpeg",
+      "photos": [
+        "AKNZ00001.jpeg...AKNZ00022.jpeg"
+      ],
+      "latitude": -36.8509,
+      "longitude": 174.7650
+    },
+    {
+      "title": "Rotorua - NZ 2026",
+      "city": "Rotorua",
+      "country": "New Zealand",
+      "date": "2026-05-24",
+      "collections": [
+        "North Island NZ 2026"
+      ],
+      "captured_on": "iPhone 13 Mini",
+      "folder": "2026-rotorua",
+      "cover": "RRNZ00031.jpeg",
+      "photos": [
+        "RRNZ00001.jpeg...RRNZ00068.jpeg"
+      ],
+      "latitude": -38.1446,
+      "longitude": 176.2378
+    },
+    {
+      "title": "Taupo - NZ 2026",
+      "city": "Taupo",
+      "country": "New Zealand",
+      "date": "2026-05-24",
+      "collections": [
+        "North Island NZ 2026"
+      ],
+      "captured_on": "iPhone 13 Mini",
+      "folder": "2026-taupo",
+      "cover": "TPNZ00006.jpeg",
+      "photos": [
+        "TPNZ00001.jpeg...TPNZ00045.jpeg"
+      ],
+      "latitude": -38.6843,
+      "longitude": 176.0704
+    },
+    {
+      "title": "Tongariro - NZ 2026",
+      "city": "Tongariro",
+      "country": "New Zealand",
+      "date": "2026-05-24",
+      "collections": [
+        "North Island NZ 2026"
+      ],
+      "captured_on": "iPhone 13 Mini",
+      "folder": "2026-tongariro",
+      "cover": "TGNZ00019.jpeg",
+      "photos": [
+        "TGNZ00001.jpeg...TGNZ00025.jpeg"
+      ],
+      "latitude": -39.1296,
+      "longitude": 175.6358
     }
   ]
 }
